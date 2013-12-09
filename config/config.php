@@ -31,7 +31,7 @@ A email designated to receive messages from the server. Examples:
 define('SYSTEM_EMAIL', 'cmelhorn@g.harvard.edu');
 
 # Default DB name for this app
-define('DB_NAME', "tessie_p4_test-cscie15_biz");
+define('DB_NAME', "tessie_p4a_test-csie15_biz");
 
 # Timezone
 define('TIMEZONE', 'America/New_York');
