@@ -38,6 +38,7 @@
             <a href='/users/logout'>Logout  </a>  |
             <a href='/users/profile'>My Profile </a> |
             <a href='/posts/users'> Members  </a> |
+            <a href='/cm-rankings/ranking'> Company Rankings  </a> |
             <a href='/posts'> Followed Chatters </a>
 
 

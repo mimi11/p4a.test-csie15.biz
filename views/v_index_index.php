@@ -4,34 +4,45 @@
 
 
 
-        <h3>The hangout place for busy professionals.</h3>
+        <h3>Buzz the 3Ts out of your devices! </h3>
 
-        <br>Never miss out again on that latest news from missing your children school event,
-        <br>or parent meeting,or that work after-party u couldn't go to, and or the fund-raiser
-        <br>event that u mother-in-law organized and made u promised to attend. AfterChatter will
-        <br>keep plugged in!
-        <br>
-        <br>
-        <h6>Just follow the users from these communities to get the Executive brief-up!</h6>
 
+       <pre>
+
+            <div id="wikipedia"> From Wikipedia:
+
+        "Coltan (short for columbite–tantalite and known industrially as tantalite)
+        is a dull black metallic ore from which the elements niobium (formerly "columbium") and tantalum are extracted.
+
+        Tantalum from coltan is used to manufacture tantalum capacitors, used in electronic products.
+        Coltan mining has been cited as helping to finance serious conflict,conflict in the Democratic Republic of Congo"
+        sdource:<a href="http://en.wikipedia.org/wiki/Coltan">wikipedia </a>
+            </div>
+
+       </pre>
 
 
         <!-- Menu options for users who are not logged in -->
     <?php else: ?>
 
 
-        <h3>The hangout place for busy professionals.</h3>
-        <br>Never miss out again on that latest news from missing your children school event,
-        <br>or parent meeting,or that work after-party u couldn't go to, and or the fund-raiser
-        <br>event that u mother-in-law organized and made u promised to attend. AfterChatter will
-        <br>keep plugged in!
-        <br>
-        <br>
-        <h6>Just follow the users from these communities to get the Executive brief-up!</h6>
+        <h3>Buzz the 3Ts out of your devices! </h3>
 
 
+        <pre>
 
-        <br>
+              <div id="wikipedia"> From Wikipedia, the free encyclopedia
+
+                  "Coltan (short for columbite–tantalite and known industrially as tantalite)
+                  is a dull black metallic ore from which the elements niobium (formerly "columbium") and tantalum are extracted.
+
+                  Tantalum from coltan is used to manufacture tantalum capacitors, used in electronic products.
+                  Coltan mining has been cited as helping to finance serious conflict,conflict in the Democratic Republic of Congo"
+              </div>
+
+       </pre>
+
+       </pre>
 
 
     <?php endif; ?>
