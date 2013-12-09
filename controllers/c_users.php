@@ -257,9 +257,34 @@ class users_controller extends base_controller
 
 
         }
-
-
     }
+
+
+     public function user_device(){
+        //view for user to provide information about a device they own
+
+
+       //set-up view
+
+       //render view
+
+       //echo view
+
+
+
+     }
+
+      public function p_user_device(){
+       // form to process user devices information
+
+
+
+      }
+
+
+
+
+
 
     public function logout()
     {

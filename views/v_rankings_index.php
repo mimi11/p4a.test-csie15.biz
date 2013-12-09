@@ -1,35 +1,14 @@
-<?php
-class users_controller extends base_controller {
+<form>
 
-    public function __construct() {
-        parent::__construct();
-        echo "users_controller construct called<br><br>";
-    }
+    <select>
 
-    public function index() {
-        echo "This is the index page";
-    }
+        <?php foreach($device_types as $type): ?>
 
-    public function signup() {
-        echo "This is the signup page";
-    }
+            <option value="<?=$type['id']?>"> <?=$type['name']?></option>
 
-    public function login() {
-        echo "This is the login page";
-    }
+        <?php endforeach; ?>
 
-    public function logout() {
-        echo "This is the logout page";
-    }
+    </select>
 
-    public function profile($user_name = NULL) {
 
-        if($user_name == NULL) {
-            echo "No user specified";
-        }
-        else {
-            echo "This is the profile for ".$user_name;
-        }
-    }
-
-} # end of the class
+</form>
