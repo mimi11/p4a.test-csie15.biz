@@ -26,5 +26,20 @@ class base_controller {
 			$this->template->set_global('user', $this->user);
 			
 	}
+
+    /*___________________________________________________________________________________________
+    The purpose of this function is to ensure that we sanitize user input throughout the application
+
+
+   _____________________________________________________________________________________________
+   */
+    protected function sanitize_id($id){
+        #this check for SQL injection attack by eliminating text from the input variable.
+        if(is_numeric($id)){
+            return intval($id);
+        }
+
+        return -1;
+    }
 	
 } # eoc

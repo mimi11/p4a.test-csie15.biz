@@ -7,6 +7,9 @@
 
     <!-- Controller Specific JS/CSS -->
     <link rel="stylesheet" href="/css/app.css" type ="text/css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script src = '/js/rankings.js'></script>
+
 
     <!-- tracking scripts
     you may have java script has to be there before the java code execute
@@ -38,7 +41,7 @@
             <a href='/users/logout'>Logout  </a>  |
             <a href='/users/profile'>My Profile </a> |
             <a href='/posts/users'> Members  </a> |
-            <a href='/cm-rankings/ranking'> Company Rankings  </a> |
+            <a href='/cm-rankings/index'> Company Rankings  </a> |
             <a href='/posts'> Followed Chatters </a>
 
 
