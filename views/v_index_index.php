@@ -6,21 +6,19 @@
 
         <h3>Buzz the 3Ts out of your devices! </h3>
 
-
-       <pre>
-
-            <div id="wikipedia"> From Wikipedia:
+        <div id="wikipedia"> From Wikipedia:
+        <pre>
 
         "Coltan (short for columbite–tantalite and known industrially as tantalite)
         is a dull black metallic ore from which the elements niobium (formerly "columbium") and tantalum are extracted.
 
         Tantalum from coltan is used to manufacture tantalum capacitors, used in electronic products.
         Coltan mining has been cited as helping to finance serious conflict,conflict in the Democratic Republic of Congo"
-        sdource:<a href="http://en.wikipedia.org/wiki/Coltan">wikipedia </a>
-            </div>
+
+        source:<a href="http://en.wikipedia.org/wiki/Coltan">wikipedia </a>
 
        </pre>
-
+        </div>
 
         <!-- Menu options for users who are not logged in -->
     <?php else: ?>

@@ -5,12 +5,109 @@
 /*-------------------------------------------------------------------------------------------------
 Layout
 -------------------------------------------------------------------------------------------------*/
-#wrapper {
-    width: 960px;
-    margin: 0px auto;
-    margin-left: 2px;
-    margin-right: 3px;
-   /* background-image:  url('../images/Coltan_map.png');
-    background-repeat: no-repeat;*/
+body{
+    background-color: white;
+    overflow: scroll;
+}
+body, button, input, label, select, td, textarea {
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: .85em;
+}
+body {
+    background:  none repeat scroll 0% 0% rgb(246, 246, 246));
+    color: rgb(51, 51, 51);
+    line-height: 1.28;
+    margin: 0px;
+    padding: 2px;
+    text-align: left;
+    direction: ltr;
+    unicode-bidi: embed;
+
+}
+
+#navigation {
+    width: 100%;
+    clear: both;
+    background:-moz-linear-gradient(center top , black,rgb(92, 92, 92))repeat scroll 0% 0% transparent;
+    overflow: hidden;
+    border-bottom: 2px solid greenyellow;
+    font-variant: small-caps; font-size: 2em;
+    color:white;
+    font-family:Helvetica;
+
+
+}
+#wikipedia{
+    color: darkblue;
+    font:12px sans-serif bold ;
+    text-decoration: none;
+
+
+}
+#wikipedia a{
+    color:darkblue;
+    font-size:12px;
+    text-decoration: none;
+}
+
+#wikipedia a:hover{
+    color:blue ;
+    font-size:12px;
+    text-decoration: none;
+
+
+}
+#navigation ul li {
+    display: inline;
+    margin: 0; font-variant: small-caps;
+}
+#navigation ul li a {
+    display: inline-block;
+    padding: 5px 10px 5px;
+    letter-spacing: 0.05em;
+    color:greenyellow;
+}
+#navigation ul li a:visited { color: greenyellow; }
+#navigation ul li a:hover { background-color: greenyellow; text-decoration: none; }
+
+
+#navigation a {color: white;
+    /* Rules for navigation items */
+}
+#navigation a:hover {background-color:greenyellow; color:black;
+    /* Rules for navigation items */
+}
+
+#about_your_device{
+
+    width: 90%;
+    border: 2px solid rgb(92, 92, 92);
+    padding: 0px 20px 20px;
+    float: left;
+    overflow: hidden;
+    background: none repeat scroll 0% 0% white;
+    box-shadow: 1px 1px 2px rgb(204, 204, 204);
+    font-size: 12px;
+    font-weight: bold;
+    font-family: helveticaneue-light;
+
+
+    }
+
+#device_tool {
+    background: rgb(204, 204, 204) repeat-x scroll 0px -233px transparent;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    height: 36px;
+    line-height: 30px;
+    width: 487px;
+    padding-left: 20px;
+    position: relative;
+    right: 20px;
+    top: -1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 
 }

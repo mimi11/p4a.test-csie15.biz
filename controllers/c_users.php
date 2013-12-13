@@ -52,7 +52,6 @@ class users_controller extends base_controller
     public function p_signup()
     {
 
-        # Confirming if they have empty fields
 
         # More data we want stored with the user
         $_POST['created'] = Time::now();
