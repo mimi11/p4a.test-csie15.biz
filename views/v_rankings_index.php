@@ -1,18 +1,19 @@
 
-<pre>
+<p>
 Are you supporting Conflict Mineral War? Find out now.
 
 Enter information about a device you own, in the form below.
-Select a device type, model and make for your device to find out if your device could potentially be
-part of the conflict Mineral war.
+<br>
+Select a device type, model and make for your device to find out
+if your device could potentially be part of the problem.
 
-</pre>
+</p>
 
-<div id='about_your_device'>
+<div class='about_your_device'>
 
     <form>
 
-     <div id="cm-tool>"<h3>Device Conflict Minerals tool</h3></div>
+        <div id="cm_tool">Device Conflict Minerals tool </div>
     <p>Select A device type you own: </p>
     <br>
 

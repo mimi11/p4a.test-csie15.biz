@@ -4,11 +4,10 @@
 
 
 
-        <h3>Buzz the 3Ts out of your devices! </h3>
-
+        <h2>Buzz the 3Ts out of your devices! </h2>
+        <h4>
         <div id="wikipedia"> From Wikipedia:
         <pre>
-
         "Coltan (short for columbite–tantalite and known industrially as tantalite)
         is a dull black metallic ore from which the elements niobium (formerly "columbium") and tantalum are extracted.
 
@@ -16,9 +15,9 @@
         Coltan mining has been cited as helping to finance serious conflict,conflict in the Democratic Republic of Congo"
 
         source:<a href="http://en.wikipedia.org/wiki/Coltan">wikipedia </a>
-
-       </pre>
+        </pre>
         </div>
+        </h4>
 
         <!-- Menu options for users who are not logged in -->
     <?php else: ?>

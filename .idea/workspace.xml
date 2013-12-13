@@ -9,10 +9,10 @@
     <file path="$PROJECT_DIR$/../p4.test-csie15.biz/views/_v_email.php" changelist="fbfaeb3d-0b4c-4076-97c6-3a73dc0e776a" time="1386564053991" ignored="false" />
     <file path="/_v_template.php" changelist="fbfaeb3d-0b4c-4076-97c6-3a73dc0e776a" time="1386898623387" ignored="false" />
     <file path="/c_cm-rankings.php" changelist="fbfaeb3d-0b4c-4076-97c6-3a73dc0e776a" time="1386632904754" ignored="false" />
-    <file path="/app.css" changelist="fbfaeb3d-0b4c-4076-97c6-3a73dc0e776a" time="1386900925076" ignored="false" />
-    <file path="/v_index_index.php" changelist="fbfaeb3d-0b4c-4076-97c6-3a73dc0e776a" time="1386618752195" ignored="false" />
+    <file path="/app.css" changelist="fbfaeb3d-0b4c-4076-97c6-3a73dc0e776a" time="1386902190032" ignored="false" />
+    <file path="/v_index_index.php" changelist="fbfaeb3d-0b4c-4076-97c6-3a73dc0e776a" time="1386901693426" ignored="false" />
     <file path="/c_users.php" changelist="fbfaeb3d-0b4c-4076-97c6-3a73dc0e776a" time="1386619731775" ignored="false" />
-    <file path="/v_rankings_index.php" changelist="fbfaeb3d-0b4c-4076-97c6-3a73dc0e776a" time="1386896533229" ignored="false" />
+    <file path="/v_rankings_index.php" changelist="fbfaeb3d-0b4c-4076-97c6-3a73dc0e776a" time="1386902285639" ignored="false" />
     <file path="/a.dummy" changelist="fbfaeb3d-0b4c-4076-97c6-3a73dc0e776a" time="1386630676657" ignored="false" />
     <file path="/c_rankings.php" changelist="fbfaeb3d-0b4c-4076-97c6-3a73dc0e776a" time="1386893251922" ignored="false" />
     <file path="/rankings.js" changelist="fbfaeb3d-0b4c-4076-97c6-3a73dc0e776a" time="1386635198614" ignored="false" />
@@ -56,7 +56,7 @@
       <file leaf-file-name="_v_template.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/_v_template.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="31" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-19.375">
+            <state line="56" column="31" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-35.0">
               <folding />
             </state>
           </provider>
@@ -65,16 +65,16 @@
       <file leaf-file-name="v_index_index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/v_index_index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="14" selection-start="703" selection-end="703" vertical-scroll-proportion="-10.625">
+            <state line="16" column="75" selection-start="684" selection-end="684" vertical-scroll-proportion="-9.375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="22" selection-start="437" selection-end="437" vertical-scroll-proportion="0.17964073">
+            <state line="88" column="6" selection-start="2127" selection-end="2127" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,12 +98,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="v_rankings_index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="v_rankings_index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/v_rankings_index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="1" column="2" selection-start="3" selection-end="3" vertical-scroll-proportion="0.029503105">
               <folding>
-                <marker date="1386896939000" expanded="true" signature="638:1319" placeholder="..." />
+                <marker date="1386902371000" expanded="true" signature="624:1305" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -121,7 +121,7 @@
       <file leaf-file-name="c_posts.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/c_posts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="0" selection-start="2025" selection-end="2551" vertical-scroll-proportion="-12.833333">
+            <state line="76" column="0" selection-start="2367" selection-end="2367" vertical-scroll-proportion="-9.708333">
               <folding />
             </state>
           </provider>
@@ -149,10 +149,10 @@
         <option value="$PROJECT_DIR$/js/rankings.js" />
         <option value="$PROJECT_DIR$/controllers/c_users.php" />
         <option value="$PROJECT_DIR$/controllers/c_rankings.php" />
-        <option value="$PROJECT_DIR$/views/v_rankings_index.php" />
         <option value="$PROJECT_DIR$/views/_v_template.php" />
         <option value="$PROJECT_DIR$/views/v_index_index.php" />
         <option value="$PROJECT_DIR$/css/app.css" />
+        <option value="$PROJECT_DIR$/views/v_rankings_index.php" />
       </list>
     </option>
   </component>
@@ -472,9 +472,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/c_posts.php">
+    <entry file="file://$PROJECT_DIR$/controllers/c_rankings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="0" selection-start="2025" selection-end="2551" vertical-scroll-proportion="-12.833333">
+        <state line="115" column="38" selection-start="3541" selection-end="3541" vertical-scroll-proportion="-35.204082">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_v_template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="31" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-35.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/v_index_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="75" selection-start="684" selection-end="684" vertical-scroll-proportion="-9.375">
           <folding />
         </state>
       </provider>
@@ -486,40 +500,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/v_rankings_index.php">
+    <entry file="file://$PROJECT_DIR$/controllers/c_posts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding>
-            <marker date="1386896939000" expanded="true" signature="638:1319" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/_v_template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="31" selection-start="2107" selection-end="2107" vertical-scroll-proportion="-19.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/c_rankings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="38" selection-start="3541" selection-end="3541" vertical-scroll-proportion="-35.204082">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/v_index_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="703" selection-end="703" vertical-scroll-proportion="-10.625">
+        <state line="76" column="0" selection-start="2367" selection-end="2367" vertical-scroll-proportion="-9.708333">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="437" selection-end="437" vertical-scroll-proportion="0.17964073">
+        <state line="88" column="6" selection-start="2127" selection-end="2127" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/v_rankings_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="2" selection-start="3" selection-end="3" vertical-scroll-proportion="0.029503105">
+          <folding>
+            <marker date="1386902371000" expanded="true" signature="624:1305" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
