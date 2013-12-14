@@ -18,16 +18,18 @@ class index_controller extends base_controller
     Accessed via http://localhost/index/index/
     -------------------------------------------------------------------------------------------------*/
     public function index()
-    {
-
+    {   $error=null;
+        $login_error = null;
         # Any method that loads a view will commonly start with this
         # First, set the content of the template with a view file
         $this->template->content = View::instance('v_index_index');
 
+
         # Now set the <title> tag
         $this->template->title = "CM-Buzz";
 
-        # CSS/JS includes
+
+# CSS/JS includes
 
         $client_files_head = Array("");
         $this->template->client_files_head = Utils::load_client_files($client_files_head);
@@ -35,9 +37,42 @@ class index_controller extends base_controller
         $client_files_body = Array("");
         $this->template->client_files_body = Utils::load_client_files($client_files_body);
 
+        # View within a view
+        $this->template->login = View::instance('v_users_login');
+
+
+        $this->template->content->signup = View::instance('v_users_signup');
+        #Pass data to the view
+        $this->template->content->error = $error;
+
 
         # Render the view
         echo $this->template;
+
+
+        #logic for signup_error
+
+        if($error == 'duplicate_email_error'){
+            echo  "Sign up failed. E-Mail address already registered";
+
+        }
+        else{
+        }
+
+        if($error == 'blank_fields_error'){
+
+            echo ' Sign up failed. All fields must have a value';
+        }
+
+           # LOGIC FOR LOGIN_ERROR
+     if ($login_error == 'password_error'){
+
+       echo" Login failed. Please double check your password.";
+     }
+      if ($login_error == 'email_error'){
+
+       echo " Login failed. Please double check your email.";
+      }
 
     } # End of method
 

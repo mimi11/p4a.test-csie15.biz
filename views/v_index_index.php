@@ -41,6 +41,8 @@
 
        </pre>
 
+        <?=$signup?>
+        <?=$error?>
 
     <?php endif; ?>
 

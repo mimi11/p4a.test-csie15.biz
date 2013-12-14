@@ -1,7 +1,7 @@
 <?php
 /*-------------------------------------------------------------------------------------------------
 Name: Carine Melhorn
-Project Name: p2.test-csie15.biz
+Project Name: p4.test-csie15.biz
 github username: mimi11
    -------------------------------------------------------------------------------------------------*/
 class users_controller extends base_controller
@@ -52,7 +52,6 @@ class users_controller extends base_controller
     public function p_signup()
     {
 
-
         # More data we want stored with the user
         $_POST['created'] = Time::now();
         $_POST['modified'] = Time::now();
@@ -70,7 +69,6 @@ class users_controller extends base_controller
 
 
         # Signup form error checking
-
 
         # 1.Confirming if they have a duplicate email
 
@@ -91,7 +89,7 @@ class users_controller extends base_controller
                 $error = true;
             }
         }
-        # Redirect in case of error
+        # 3.Redirect in case of error
 
         if ($error) {
             Router::redirect("/users/signup/blank_fields_error");
@@ -138,13 +136,13 @@ class users_controller extends base_controller
         }
     }
 
-    public function login($error = NULL)
+    public function login($login_error = NULL)
     {
         # Setup view
         $this->template->content = View::instance('v_users_login');
 
         $this->template->title = "login";
-        $this->template->content->error = $error;
+        $this->template->content->error = $login_error;
 
         # Render template
         echo $this->template;
@@ -244,7 +242,6 @@ class users_controller extends base_controller
             $imageObj->resize(100, 100);
             $imageObj->display();
 
-
         } # Means there is something went wrong - e.g parameter is wrong since update() should only update a single row.
         else {
 
@@ -254,14 +251,12 @@ class users_controller extends base_controller
             $imageObj->display();
 
 
-
         }
     }
 
 
      public function user_device(){
         //view for user to provide information about a device they own
-
 
        //set-up view
 
@@ -276,12 +271,7 @@ class users_controller extends base_controller
       public function p_user_device(){
        // form to process user devices information
 
-
-
       }
-
-
-
 
 
 
@@ -309,8 +299,6 @@ class users_controller extends base_controller
     {
         $profile_id = DB::instance(DB_NAME)->select_row('SELECT * FROM users WHERE user_id = ' . $this->user->user_id);
 
-
-
         # Setup view
         $this->template->content = View::instance('v_users_bio');
 
@@ -331,7 +319,6 @@ class users_controller extends base_controller
 
         # Render template
         echo $this->template;
-
 
 
     }

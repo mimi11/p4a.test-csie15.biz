@@ -1,10 +1,9 @@
 
 <p>
-Are you supporting Conflict Mineral War? Find out now.
-
-Enter information about a device you own, in the form below.
+Are you supporting the conflict Mineral War in Eastern Congo?
+Find out now by enter information about a device you own, in the form below.
 <br>
-Select a device type, model and make for your device to find out
+Select a type, model and make for your device to find out
 if your device could potentially be part of the problem.
 
 </p>
@@ -17,7 +16,7 @@ if your device could potentially be part of the problem.
     <p>Select A device type you own: </p>
     <br>
 
-    <select id='device_id' name ="id">
+    <select id='device_type' name ='id'>
 
         <?php foreach($device_types as $type): ?>
 
@@ -26,8 +25,6 @@ if your device could potentially be part of the problem.
         <?php endforeach; ?>
 
     </select>
-
-
 
     <p>Select A device model you own: </p>
     <br>
@@ -46,7 +43,7 @@ if your device could potentially be part of the problem.
 
     <p>Select the manufacturer for your device: </p>
     <br>
-    <select id ='company_id' name="company_name_id">
+    <select id ='company_id' name="company_id">
 
         <?php foreach($company_names as $name): ?>
 

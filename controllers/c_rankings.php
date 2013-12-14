@@ -21,6 +21,12 @@ class rankings_controller extends base_controller
         }
     }
 
+    /*----------------------------------------------------------------------------------------------------------------------
+    Index is the landing page that will list the company profiles information
+    And provides the view to use the conflict Minerals tool that will allow users to enter information about their devices.
+
+    -----------------------------------------------------------------------------------------------------------------------*/
+
     public function index()
     {
         # setup views to load specific js
@@ -33,17 +39,20 @@ class rankings_controller extends base_controller
         # Use load_client_files to generate the links from the above array
         $this->template->client_files_body = Utils::load_client_files($client_files_body);
 
-
         # Set up the View
         $this->template->content = View::instance('v_rankings_index');
         $this->template->title = "Company Rankings";
 
+
+       /*_______________________________________________________________________________________________________________
+       Conflict Mineral Tool logic begins here
+       ----------------------------------------------------------------------------------------------------------------*/
         # 1.Query to select a device_type from the db
         $q = 'SELECT *
         FROM device_type
         Order by name';
 
-        # 2.Run the query, store the results in the variable $posts
+        # 2.Run the query, to display  the results in the variable $device_type that will be loaded in the select form
         $device_type = DB::instance(DB_NAME)->select_rows($q);
 
 
@@ -51,14 +60,12 @@ class rankings_controller extends base_controller
         $this->template->content->device_types = $device_type;
 
 
-        #4. Query to retrieve device model from the DB
 
-
-        # 5.Run the query, store the results in the variable $posts
+        # 4.For device Model, since it is from the same table, we don't need to run a new query, we can store the data directly from the db in the variable $device_model
         $device_model = DB::instance(DB_NAME)->select_rows($q);
 
 
-        # Pass data to the View
+        #5. Pass data to the View
         $this->template->content->device_model = $device_model;
 
 
@@ -75,59 +82,67 @@ class rankings_controller extends base_controller
         $this->template->content->company_names = $company_name;
 
 
-        # Render the View
+        # 8.Render the View
         echo $this->template;
     }
+    /*---------------------------------------------------------------------------------------------------------------------
+     Ranking control is the function that
+    1) Does a lookup to the company_rankings table to obtain score, when a user click on a score button (after filling out form)
+    2) Store all _POST[] information collected via the form into users_devices table
+    -------------------------------------------------------------------------------------------------------------------------*/
+    public function ranking()
+    {
+        $company_id = $this->sanitize_id($_POST['company_id']);
 
-        public function ranking(){
+     // Step 1 - Write operation: Insert information collected from the user selection into the devices table
 
-            $company_id = $this->sanitize_id($_POST['company_id']);
+        $_POST['user_id']=$this->user->user_id;
+        $user_device_info = DB::instance(DB_NAME)->insert("users_devices", $_POST);
 
+        //step 2 - Read operation
 
-            # setup query for retrieving manufacturer
-            # Query
-            $q2 = 'SELECT *
+        # setup query for retrieving manufacturer
+        # Query
+        $q2 = 'SELECT *
         FROM company_rankings
-        WHERE company_id ='.$company_id;
+        WHERE company_id =' . $company_id;
 
-            # Run the query, store the results in the variable $posts
-            $companies = DB::instance(DB_NAME)->select_rows($q2);
+        # Run the query, store the results in the variable $posts
+        $companies = DB::instance(DB_NAME)->select_rows($q2);
 
-            if(count($companies)==1){
-               //    echo $companies[0]['score'];
-                $company = $companies[0];
-                echo $company['score'];
-            }else{
-                 echo -1;
-            }
-
-
-
-            # Devices Type selected
-
-
-            # This variable will update the content from the user update
-
-
-            # Insert information collected from the user selection into the devices table
-
-            $user_device_info = DB::instance(DB_NAME)->insert('users_devices', $_POST,
-                "WHERE user_device_id= '"
-                . $this->user->user_id
-                . "'");
-
-
-
-            if ( $user_device_info  == 1) {
-                echo $this->user." owns a " . $user_device_info . " manufactured by ".$company_id;
-            } # Means there is something went wrong - e.g parameter is wrong since update() should only update a single row.
-            else {
-                echo "Unable to obtain your device information, back to your profile <a href='/rankings/ranking'>Back to your post</a>";
-
-            }
-
-
-
+        if (count($companies) == 1) {
+            //    echo $companies[0]['score'];
+            $company = $companies[0];
+            echo $company['score'];
+        } else {
+            echo -1;
         }
+
+
+    }
+    /*This method calculates average score for each devices owned by a user. The average score will equate to the user status as being
+     * green -compliant, yellow - some effort toward CM free and red - devices is using conflict mineral resources
+     * status follow user during a session variable
+     */
+    public function status()
+    {
+     #step1 - query db to compute average score for devices owned by user
+
+     $q= 'Select avg (b.score)
+        from users_devices a,company_rankings b
+        where a.company_id = b.company_id
+        AND a.user_id='.$this->user-user_id;
+
+
+
+
+
+
+
+
+
+    }
+
+
 
 }#eoc

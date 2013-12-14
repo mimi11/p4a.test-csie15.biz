@@ -24,19 +24,24 @@ body {
     unicode-bidi: embed;
 
 }
-
-#navigation {
-    width: 100%;
-    clear: both;
-    background:-moz-linear-gradient(center top , black,rgb(92, 92, 92))repeat scroll 0% 0% transparent;
-    overflow: hidden;
-    border-bottom: 2px solid greenyellow;
-    font-variant: small-caps; font-size: 2em;
-    color:white;
-    font-family:Helvetica;
-
+.header form{display: inline-block;
 
 }
+.login h1{
+    display: inline-block;}
+
+#header_intro{display:inline-block;
+
+}
+.login_intro
+form{margin:0;padding:0}
+label{cursor:pointer;color:#666;font-weight:bold;vertical-align:middle}
+label input{display: inline-block;font-weight:normal}
+textarea, .inputtext, .inputpassword{border:1px solid #bdc7d8;margin:0;padding:3px}
+textarea{max-width:100%}
+
+
+
 #wikipedia{
    font:bold;
 
@@ -55,6 +60,22 @@ body {
 
 
 }
+
+#navigation {
+    width: 100%;
+    clear: both;
+    background:-moz-linear-gradient(center top , black,rgb(92, 92, 92))repeat scroll 0% 0% transparent;
+    overflow: hidden;
+    border-bottom: 2px solid greenyellow;
+    font-variant: small-caps; font-size: 2em;
+    color:white;
+    font-family:Helvetica;
+}
+
+
+
+
+
 #navigation ul li {
     display: inline;
     margin: 0; font-variant: small-caps;
@@ -106,4 +127,12 @@ body {
     text-transform: uppercase;
     margin-bottom: 20px;
 
+}
+
+#footer {
+    background:-moz-linear-gradient(center top , black,rgb(92, 92, 92))repeat scroll 0% 0% transparent;
+    border-top: 5px solid #adff2f;
+    color: #fff;
+    padding-top: 10px;
+    font-size: 12px;
 }
