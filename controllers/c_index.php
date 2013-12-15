@@ -37,32 +37,20 @@ class index_controller extends base_controller
         $client_files_body = Array("");
         $this->template->client_files_body = Utils::load_client_files($client_files_body);
 
-        # View within a view
-        $this->template->login = View::instance('v_users_login');
-
-
-        $this->template->content->signup = View::instance('v_users_signup');
-        #Pass data to the view
-        $this->template->content->error = $error;
-
 
         # Render the view
         echo $this->template;
 
+       if($this->user){
 
-        #logic for signup_error
+        #step 1 - get status from user
+        $status = $this->status($this->user->user_id);
 
-        if($error == 'duplicate_email_error'){
-            echo  "Sign up failed. E-Mail address already registered";
+        #step 2 - storing inside session
+        $_SESSION['status'] = $status;
 
-        }
-        else{
-        }
+       }
 
-        if($error == 'blank_fields_error'){
-
-            echo ' Sign up failed. All fields must have a value';
-        }
 
            # LOGIC FOR LOGIN_ERROR
      if ($login_error == 'password_error'){

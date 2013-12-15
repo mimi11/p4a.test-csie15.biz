@@ -2,9 +2,7 @@
 
 -------------------------------------------------------------------------------------------------*/
 
-/*-------------------------------------------------------------------------------------------------
-Layout
--------------------------------------------------------------------------------------------------*/
+
 body{
     background-color: white;
     overflow: scroll;
@@ -16,23 +14,41 @@ body, button, input, label, select, td, textarea, pre {
 body {
     background:  none repeat scroll 0% 0% rgb(246, 246, 246));
     color: rgb(51, 51, 51);
-    line-height: 1.28;
+
     margin: 0px;
     padding: 2px;
     text-align: left;
     direction: ltr;
     unicode-bidi: embed;
+}
+/*-------------------------------------------------------------------------------------------------
+Layout
+-------------------------------------------------------------------------------------------------*/
+#wrapper{
+    background-color: #eee ;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto;
+    width: 1170px;
+
 
 }
-.header form{display: inline-block;
 
-}
+
+
 .login h1{
     display: inline-block;}
 
-#header_intro{display:inline-block;
+.header_intro h4 {
+    display:inline-block;
+    float: left;
+
 
 }
+
+
+
 .login_intro
 form{margin:0;padding:0}
 label{cursor:pointer;color:#666;font-weight:bold;vertical-align:middle}
@@ -60,8 +76,13 @@ textarea{max-width:100%}
 
 
 }
+#session_status{
+    float:left;
+    margin-left: 1em;
+}
 
 #navigation {
+    float: none;
     width: 100%;
     clear: both;
     background:-moz-linear-gradient(center top , black,rgb(92, 92, 92))repeat scroll 0% 0% transparent;
@@ -71,10 +92,6 @@ textarea{max-width:100%}
     color:white;
     font-family:Helvetica;
 }
-
-
-
-
 
 #navigation ul li {
     display: inline;
@@ -102,7 +119,6 @@ textarea{max-width:100%}
     width: 90%;
     border: 2px solid rgb(92, 92, 92);
     padding: 0px 20px 20px;
-    float: left;
     overflow: hidden;
     background: none repeat scroll 0% 0% white;
     box-shadow: 1px 1px 2px rgb(204, 204, 204);
@@ -128,11 +144,19 @@ textarea{max-width:100%}
     margin-bottom: 20px;
 
 }
-
 #footer {
+
+
     background:-moz-linear-gradient(center top , black,rgb(92, 92, 92))repeat scroll 0% 0% transparent;
     border-top: 5px solid #adff2f;
     color: #fff;
     padding-top: 10px;
     font-size: 12px;
+
 }
+#footer{
+margin-left: -20px;
+margin-right: -20px;
+padding-left: 20px;
+padding-right: 20px;
+    }

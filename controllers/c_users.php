@@ -70,6 +70,9 @@ class users_controller extends base_controller
 
         # Signup form error checking
 
+
+
+
         # 1.Confirming if they have a duplicate email
 
         if ($this->userObj->confirm_unique_email($email) == False) {
@@ -213,6 +216,7 @@ class users_controller extends base_controller
             param 4 = the path of the cooke (a single forward slash sets it for the entire domain)
             */
             setcookie("token", $token, strtotime('+2 weeks'), '/');
+
 
 
             # Send them to the main page - or whever you want them to go

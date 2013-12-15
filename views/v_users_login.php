@@ -18,6 +18,21 @@
             Password<br>
             <input class ='login_input' type='password' name='password'>
 
+
+            <?php if ($error == 'password_error'): ?>
+                <div class='error' style="color: red; line-height: 1.2">
+                    Login failed. Please double check your password.
+                </div>
+                <br>
+            <?php endif; ?>
+
+            <?php if ($error == 'email_error'): ?>
+                <div class='error' style="color: red; line-height: 1.2">
+                    Login failed. Please double check your email.
+                </div>
+                <br>
+            <?php endif; ?>
+
             <input type='submit' value='Log in'>
         </form>
     </div><!--end of Loging div-->

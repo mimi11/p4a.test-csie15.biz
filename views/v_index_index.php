@@ -37,12 +37,12 @@
                   Coltan mining has been cited as helping to finance serious conflict,conflict in the Democratic Republic of Congo"
               </div>
 
-       </pre>
 
        </pre>
 
-        <?=$signup?>
-        <?=$error?>
+       </pre>
+
+
 
     <?php endif; ?>
 

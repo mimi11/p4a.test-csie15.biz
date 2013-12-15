@@ -10,11 +10,6 @@
     <!-- Controller Specific JS/CSS -->
     <link rel="stylesheet" href="/css/app.css" type ="text/css"/>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
-    <script src ="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/additional-methods.js"></script>
-    <script src ="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/additional-methods.min.jss"></script>
-"
-   <!--script src = '/js/rankings.js'></script>
 
 
     <!-- tracking scripts
@@ -24,17 +19,21 @@
 
 </head>
 
+
+
 <body class ='cmbuzz_site'>
-  <div class ='wrapper'>
+  <div id ='wrapper'>
         <div class= 'header'> <!--div Header starts here-->
              <?php if($user): ?>
                 <h1><?=APP_NAME?></h1>
                     <div class="header_intro"> <!--div header_Intro starts here-->
-                        <h4>Welcome to <?= APP_NAME ?><?php if ($user) echo ', ' . $user->first_name; ?></h4>
+                        <h4>Welcome to <?= APP_NAME ?><?php if ($user) echo ', ' . $user->first_name; ?>
+                        </h4>
+                          <div id='session_status'><?php echo $_SESSION['status'];?></div>
                             <?php else: ?>
                                 <h1><?=APP_NAME?></h1>
                                     <div class ='login_intro'>
-                                          <?=$login?>
+                                        <a href='/users/login'>Login  </a>  |
                                     </div>
                              <?php endif; ?>
                     </div> <!--end of div header_intro"-->
@@ -51,16 +50,24 @@
                 <a href='/posts'> Followed Chatters </a>
                     <!-- Menu options for users who are not logged in -->
                     <?php else: ?>
-                        <a href='/users/logout'>Why CMBUZZ  </a>  |
-                        <a href='/users/profile'>Read Me info </a> |
+                        <a href='/users/logout'>Logout </a>  |
+                        <a href='/users/signup'>Sign up </a>
+
+
              <?php endif; ?>
         </div> <!-- End of menu Navigation div here -->
-        <div id="main"> <!-- Main div starts  -->
-            <?php if(isset($content)) echo $content;?>
+        <div class="main_content"> <!-- Main div starts  -->
+            <div class="col1">
+
                 <?php if(isset($client_files_body)) echo $client_files_body; ?>
+
+                <?php if(isset($content)) echo $content;?>
+
+
+            </div>
+                        <div class="col2"> <p></p></div>
         </div><!-- end of Main-->
-        <div id= "footer">
-        </div><!--End of Footer div-->
+        <div id= "footer"></div><!--End of Footer div-->
    </div><!--end of wrapper-->
 </body>
 </html>

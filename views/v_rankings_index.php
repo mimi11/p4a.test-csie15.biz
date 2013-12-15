@@ -14,9 +14,9 @@ if your device could potentially be part of the problem.
 
         <div id="cm_tool">Device Conflict Minerals tool </div>
     <p>Select A device type you own: </p>
-    <br>
 
     <select id='device_type' name ='id'>
+        <option value ="" > Select a device </option>
 
         <?php foreach($device_types as $type): ?>
 
@@ -26,23 +26,8 @@ if your device could potentially be part of the problem.
 
     </select>
 
-    <p>Select A device model you own: </p>
-    <br>
-
-    <select id='device_model' name ="model">
-
-        <?php foreach($device_model as $device): ?>
-
-            <option value="<?=$device['id']?>"> <?=$device['model']?></option>
-
-        <?php endforeach; ?>
-
-    </select>
-
-
 
     <p>Select the manufacturer for your device: </p>
-    <br>
     <select id ='company_id' name="company_id">
 
         <?php foreach($company_names as $name): ?>
@@ -54,7 +39,7 @@ if your device could potentially be part of the problem.
 
     </select>
 
-    <input type='button' id="score" value='score'>
+    <input type='button' id="score" value='Add Device'>
 
     <div id ='result'> </div>
 

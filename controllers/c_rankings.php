@@ -65,10 +65,6 @@ class rankings_controller extends base_controller
         $device_model = DB::instance(DB_NAME)->select_rows($q);
 
 
-        #5. Pass data to the View
-        $this->template->content->device_model = $device_model;
-
-
         # 6.setup query for retrieving manufacturer
         # Query
         $q2 = 'SELECT *
@@ -94,10 +90,22 @@ class rankings_controller extends base_controller
     {
         $company_id = $this->sanitize_id($_POST['company_id']);
 
-     // Step 1 - Write operation: Insert information collected from the user selection into the devices table
+     // Step 1 - Insert information collected from the user selection into the devices table
 
         $_POST['user_id']=$this->user->user_id;
         $user_device_info = DB::instance(DB_NAME)->insert("users_devices", $_POST);
+
+        //setting up JSon/building data object
+        $data = Array();
+
+
+        #Refreshing user status once they add a new device
+            #step 1 - get status from user
+            $status = $this->status($this->user->user_id);
+            #step 2 - storing inside session
+            $_SESSION['status'] = $status;
+            $data['score_status'] = $status;
+
 
         //step 2 - Read operation
 
@@ -113,36 +121,12 @@ class rankings_controller extends base_controller
         if (count($companies) == 1) {
             //    echo $companies[0]['score'];
             $company = $companies[0];
-            echo $company['score'];
+            $data['comapny_score'] = $company['score'];
+
         } else {
-            echo -1;
+
+            $data['comapny_score'] =-1;
         }
-
-
+        echo json_encode($data);
     }
-    /*This method calculates average score for each devices owned by a user. The average score will equate to the user status as being
-     * green -compliant, yellow - some effort toward CM free and red - devices is using conflict mineral resources
-     * status follow user during a session variable
-     */
-    public function status()
-    {
-     #step1 - query db to compute average score for devices owned by user
-
-     $q= 'Select avg (b.score)
-        from users_devices a,company_rankings b
-        where a.company_id = b.company_id
-        AND a.user_id='.$this->user-user_id;
-
-
-
-
-
-
-
-
-
-    }
-
-
-
 }#eoc
