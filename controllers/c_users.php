@@ -141,6 +141,8 @@ class users_controller extends base_controller
 
     public function login($login_error = NULL)
     {
+
+
         # Setup view
         $this->template->content = View::instance('v_users_login');
 

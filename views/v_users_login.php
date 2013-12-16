@@ -10,14 +10,17 @@
 <?php else: ?>
     <div class="login">
 
-        <form method='POST' action='/users/p_login'>
-
-            Email<br>
-            <input class ='login_input' type='text' name='email'>
-
-            Password<br>
-            <input class ='login_input' type='password' name='password'>
-
+        <form  class ='login_form' id='validate_login' method='POST' action='/users/p_login'>
+            <p>
+                <label for="cemail">* E-Mail </label>
+                <br>
+                <input id="cemail" type="email" name="email" required/>
+            </p>
+            <p>
+                <label for="password"> * Password (at least 4 characters)</label>
+                <br>
+                <input id="password" name="password" minlength="4" type="password" required/>
+            </p>
 
             <?php if ($error == 'password_error'): ?>
                 <div class='error' style="color: red; line-height: 1.2">
@@ -35,8 +38,11 @@
 
             <input type='submit' value='Log in'>
         </form>
-    </div><!--end of Loging div-->
 
+        <!--Jquery validation begins here-->
+
+       
+    </div><!--end of Loging div-->
 
 
 <?php endif; ?>

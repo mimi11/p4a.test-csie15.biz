@@ -1,11 +1,23 @@
 
 <p>
-Are you supporting the conflict Mineral War in Eastern Congo?
-Find out now by enter information about a device you own, in the form below.
-<br>
-Select a type, model and make for your device to find out
-if your device could potentially be part of the problem.
 
+    CMBUZZ created the tool below to give you an insight on
+what actions companies are (or are not) taking to contribute to the creation of a clean minerals trade in Congo,
+ and ultimately, the reduction of conflict there.
+<br>
+
+<br>
+All the rankings and company scores have been determined by The Enough Project, on their efforts toward using and investing in conflict-free minerals in their products.
+<br>
+
+Find out more by visiting the Enough Project <a href="http://raisehopeforcongo.org/content/conflict-minerals-company-rankings"> Electronics Company Rankings</a>
+
+<br>
+<br>
+    Are you supporting the conflict Mineral War in Eastern Congo?
+    Find out now by enter information about a device you own, in the form below.Select a type, model and make for your device to find out
+if your device could potentially be part of the problem. Use your consumer power to make more responsible purchasing decisions.
+<br>
 </p>
 
 <div class='about_your_device'>
@@ -41,10 +53,16 @@ if your device could potentially be part of the problem.
 
     <input type='button' id="score" value='Add Device'>
 
-    <div id ='result'> </div>
+
+        <div id='company_score'></div>
+        <div id ='result'> </div>
 
 
     </form>
+
+       <div id ='number_of_devices_owned'></div>
+
+
 </div>
 
 

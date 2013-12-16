@@ -23,7 +23,16 @@ class rankings_controller extends base_controller
 
     /*----------------------------------------------------------------------------------------------------------------------
     Index is the landing page that will list the company profiles information
-    And provides the view to use the conflict Minerals tool that will allow users to enter information about their devices.
+    And provides the view to use the conflict Minerals tool that will allow users to find out the score of the manufacturer
+    that produced their devices. Each Manufacturer is assigned a score between 0 and 60 ->
+
+    0-15: status Red- not compliant - supply chain is probably contains conflict minerals within their inventory.
+
+    16-29: Status Yellow - company is making some progress to comply their supply chain tracking mineral resources and
+    attempting to eliminate conflict minerals.
+
+    30-60: Status Green: -company is adopting a transparent process and filing/reporting data on their supply chain so that conflict
+     mineral resources can be traced out of their inventory
 
     -----------------------------------------------------------------------------------------------------------------------*/
 
@@ -58,12 +67,6 @@ class rankings_controller extends base_controller
 
         # 3.Pass data to the View
         $this->template->content->device_types = $device_type;
-
-
-
-        # 4.For device Model, since it is from the same table, we don't need to run a new query, we can store the data directly from the db in the variable $device_model
-        $device_model = DB::instance(DB_NAME)->select_rows($q);
-
 
         # 6.setup query for retrieving manufacturer
         # Query

@@ -25,6 +25,7 @@ $( document ).ready(function() {
                 var data = $.parseJSON(response);
 
                 // Inject the data into the page
+                $('#company_score').html("company score: ");
                 $('#result').html(data['comapny_score']);
                 $('#session_status').html(data['score_status']);
             }

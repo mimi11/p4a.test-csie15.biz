@@ -14,7 +14,8 @@ body, button, input, label, select, td, textarea, pre {
 body {
     background:  none repeat scroll 0% 0% rgb(246, 246, 246));
     color: rgb(51, 51, 51);
-
+    padding-top: 40px;
+    padding-bottom: 40px;
     margin: 0px;
     padding: 2px;
     text-align: left;
@@ -44,7 +45,6 @@ Layout
     display:inline-block;
     float: left;
 
-
 }
 
 
@@ -55,6 +55,19 @@ label{cursor:pointer;color:#666;font-weight:bold;vertical-align:middle}
 label input{display: inline-block;font-weight:normal}
 textarea, .inputtext, .inputpassword{border:1px solid #bdc7d8;margin:0;padding:3px}
 textarea{max-width:100%}
+
+.login_form{
+    max-width: 330px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 
 
 
