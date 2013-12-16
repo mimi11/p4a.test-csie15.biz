@@ -46,8 +46,7 @@ class posts_controller extends base_controller
         DB::instance(DB_NAME)->insert('posts', $_POST);
 
         # Quick and dirty feedback
-        echo "Your post has been added. <a href='/users/profile'>Back to your post.</a> Add a new post <a href = '/posts/add'> Here</a>";
-
+        Router::redirect('/users/profile');
     }
 
 
@@ -57,7 +56,7 @@ class posts_controller extends base_controller
         $post = DB::instance(DB_NAME)->select_row('SELECT * FROM posts WHERE post_id = ' . $post_id);
         # Setup view
         $this->template->content = View::instance('v_posts_update');
-        $this->template->title = "View/Edit Post";
+        $this->template->title = "Updte Post";
         # Pass data to the View
         $this->template->content->post = $post;
         # Render template
@@ -89,10 +88,10 @@ class posts_controller extends base_controller
             . "'");
 
         if ($number_of_rows_updated == 1) {
-            echo "Your post has been updated: " . $post_id . " <a href='/users/profile'>Back to your post</a>";
+            Router::redirect('/users/profile');
         } # Means there is something went wrong - e.g parameter is wrong since update() should only update a single row.
         else {
-            echo "Unable to update your post <a href='/users/profile'>Back to your post</a>";
+            echo "Sorry an error has occurred, we are unable to update your post <a href='/users/profile'>Back to your post</a>";
 
         }
 
@@ -109,7 +108,7 @@ class posts_controller extends base_controller
             . "'");
 
         if ($number_of_rows_deleted == 1) {
-            echo "Your post has been deleted: " . $post_id . " <a href='/users/profile'>Back to your post</a>";
+            Router::redirect('/users/profile');
         } # Means there is something went wrong - e.g parameter is wrong since update() should only update a single row.
         else {
             echo "Unable to delete your post <a href='/users/profile'>Back to your post</a>";

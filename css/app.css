@@ -22,6 +22,21 @@ body {
     direction: ltr;
     unicode-bidi: embed;
 }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    line-height: normal;
+}
+button, input, select, textarea {
+    margin: 0px;
+    font-family: inherit;
+    font-size: 100%;
+}
 /*-------------------------------------------------------------------------------------------------
 Layout
 -------------------------------------------------------------------------------------------------*/
@@ -68,6 +83,38 @@ textarea{max-width:100%}
     box-sizing: border-box;
 }
 
+btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+.btn-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 139, 202);
+    border-color: rgb(53, 126, 189);
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -moz-user-select: none;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
 
 
 

@@ -70,9 +70,6 @@ class users_controller extends base_controller
 
         # Signup form error checking
 
-
-
-
         # 1.Confirming if they have a duplicate email
 
         if ($this->userObj->confirm_unique_email($email) == False) {
@@ -297,7 +294,6 @@ class users_controller extends base_controller
 
         #Send them back to the main index.
         Router::redirect("/");
-
 
     }
 

@@ -4,8 +4,6 @@
     <p> Check out your profile <a href='/users/profile'> here</a> Or Follow the Chatters community
         <a href='/posts/users'>here</a></p> to hear about the lattest chatters
 
-
-
     <!-- Menu options for users who are not logged in -->
 <?php else: ?>
     <div class="login">
@@ -36,12 +34,12 @@
                 <br>
             <?php endif; ?>
 
-            <input type='submit' value='Log in'>
+            <input type='submit' value='Sign in'>
         </form>
 
         <!--Jquery validation begins here-->
 
-       
+
     </div><!--end of Loging div-->
 
 
