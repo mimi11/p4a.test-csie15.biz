@@ -1,34 +1,43 @@
 <div class="index_intro">
     <?php if ($user): ?>
 
-
-
-
-        <h2>Buzz the 3Ts out of your devices! </h2>
-        <h4>
-        <div id="wikipedia"> From Wikipedia:
+        Welcome to Conflict Minerals BUZZ (CMBUZZ)
+         A conflict Minerals-free online social community.
         <pre>
-        "Coltan (short for columbite–tantalite and known industrially as tantalite)
-        is a dull black metallic ore from which the elements niobium (formerly "columbium") and tantalum are extracted.
+            We hope to provide you with resources gathered by grass roots
+            movement such as the <a href="http://en.wikipedia.org/wiki/Coltan"> Enough Project </a>
+            to help you know more about how to use your consumer power and
+            buzz out conflict minerals out of your devices,
+            bring awareness to this conflict and hopefully help bring an end the conflict mineral war
+            in Easter Congo, often disguised as <em> a civil or an ethnical war.</em>
 
-        Tantalum from coltan is used to manufacture tantalum capacitors, used in electronic products.
-        Coltan mining has been cited as helping to finance serious conflict,conflict in the Democratic Republic of Congo"
+            Now that you are part of our community, check out your device(s) to see if is conflict mineral-free <a href="/rankings/index">here</a>
 
-        source:<a href="http://en.wikipedia.org/wiki/Coltan">wikipedia </a>
-        </pre>
-        </div>
-        </h4>
+         </pre>
+
 
         <!-- Menu options for users who are not logged in -->
     <?php else: ?>
 
 
-        <h3>Buzz the 3Ts out of your devices! </h3>
+        <h2>Welcome to Conflict Mineral BUZZ</h2>
+        <h4>a conflict Minerals free online social community. </h4>
 
 
         <pre>
+            We hope to provide you with resources gathered by grass roots
+            movement such as the <a href="http://en.wikipedia.org/wiki/Coltan"> Enough Project </a>
+            to help you know more about how to use your consumer power and
+            buzz out conflict minerals out of your devices,
+            bring awareness to this conflict and hopefully help bring an end the
+            conflict mineral war in Easter Congo, often disguised as <em> a civil
+            or an ethnical war.</em>
 
-              <div id="wikipedia"> From Wikipedia, the free encyclopedia
+            <a href="/users/login"> Login</a> or <a href="/users/signup">Sign up</a> to find out how to Buzz the 3Ts out of your devices!
+         </pre>
+
+              <div id="wikipedia">
+                  <p>From Wikipedia, the free encyclopedia:
 
                   "Coltan (short for columbite–tantalite and known industrially as tantalite)
                   is a dull black metallic ore from which the elements niobium (formerly "columbium") and tantalum are extracted.
@@ -37,10 +46,6 @@
                   Coltan mining has been cited as helping to finance serious conflict,conflict in the Democratic Republic of Congo"
               </div>
 
-
-       </pre>
-
-       </pre>
 
 
 

@@ -9,7 +9,12 @@ body{
 }
 body, button, input, label, select, td, textarea, pre {
     font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
-    font-size: .85em;
+
+    font-family: "proxima-nova","Helvetica Neue",;
+    font-size: 14px;
+    line-height: 1.28;
+    color: rgb(51, 51, 51);
+    -moz-osx-font-smoothing: grayscale;
 }
 body {
     background:  none repeat scroll 0% 0% rgb(246, 246, 246));
@@ -19,8 +24,8 @@ body {
     margin: 0px;
     padding: 2px;
     text-align: left;
-    direction: ltr;
     unicode-bidi: embed;
+
 }
 
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
@@ -37,40 +42,92 @@ button, input, select, textarea {
     font-family: inherit;
     font-size: 100%;
 }
-/*-------------------------------------------------------------------------------------------------
-Layout
--------------------------------------------------------------------------------------------------*/
-#wrapper{
-    background-color: #eee ;
-    padding-right:15px;
-    padding-left:15px;
-    margin-right:auto;
-    margin-left:auto;
-    width: 1170px;
-
-
-}
-
-
-
-.login h1{
-    display: inline-block;}
-
-.header_intro h4 {
-    display:inline-block;
-    float: left;
-
-}
-
-
-
-.login_intro
 form{margin:0;padding:0}
 label{cursor:pointer;color:#666;font-weight:bold;vertical-align:middle}
 label input{display: inline-block;font-weight:normal}
 textarea, .inputtext, .inputpassword{border:1px solid #bdc7d8;margin:0;padding:3px}
 textarea{max-width:100%}
+/*-------------------------------------------------------------------------------------------------
+Layout
+-------------------------------------------------------------------------------------------------*/
+#wrapper{
+    background-color: #ffffff ;
+    padding-right:10px;
+    padding-left:10px;
 
+
+
+
+}
+
+.header{
+    background:-moz-linear-gradient(center top , grey,rgb(90, 90, 90))repeat scroll 0% 0% transparent;
+    width: 100%; clear: both;  float: left;
+
+}
+.header  h4{
+    float: left;
+    clear: both;
+}
+.header  h1{
+
+    clear: both;
+
+}
+#header_intro h4 {
+    display:inline-block;
+    float: left;
+    clear:both;
+
+}
+#app_name h1{
+
+    color: rgb(204,304,92);
+    text-decoration: none;
+    -moz-text-blink: none;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+
+
+
+}
+
+.login_intro {
+    color: greenyellow;
+    float:right;
+
+}
+.login_intro a{
+    color: white;
+
+}
+.login_intro a:hover a:visited{
+overflow: hidden;
+border-bottom: 2px solid greenyellow;
+font-variant: small-caps; font-size: 2em;
+color:white;
+font-family:Helvetica;
+
+
+}
+
+#login_intro ul li a:visited { color: greenyellow; }
+#login_intro ul li a:hover { background-color: greenyellow; text-decoration: none; }
+
+.login_intro a{
+    display: inline-block;
+    padding: 5px 10px 5px;
+    letter-spacing: 0.05em;
+    color:#ffffff;
+}
+.login_intro a:hover {
+    background-color: darkgray;
+
+}
 .login_form{
     max-width: 330px;
     margin: 0 auto;
@@ -116,10 +173,17 @@ input, button, select, textarea {
     line-height: inherit;
 }
 
-
-
 #wikipedia{
    font:bold;
+    float:right;
+    clear: both;
+    margin-top:-160px;
+    position:relative;
+
+    padding-left: 550px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
 
 
 }
@@ -139,6 +203,7 @@ input, button, select, textarea {
 #session_status{
     float:left;
     margin-left: 1em;
+    clear: both;
 }
 
 #navigation {
@@ -174,6 +239,16 @@ input, button, select, textarea {
     /* Rules for navigation items */
 }
 
+
+
+.col2{
+
+}
+
+
+/*------------------------------
+Application specific - Ranking controller css
+______________________________*/
 .about_your_device{
 
     width: 90%;
@@ -207,16 +282,17 @@ input, button, select, textarea {
 #footer {
 
 
-    background:-moz-linear-gradient(center top , black,rgb(92, 92, 92))repeat scroll 0% 0% transparent;
+    background:-moz-linear-gradient(center top , black,rgb(92, 92, 92))repeat scroll 19% 0% transparent;
     border-top: 5px solid #adff2f;
+
     color: #fff;
-    padding-top: 10px;
+    padding-top:80px;
     font-size: 12px;
+    margin-left: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    margin-top: 120px;
+
 
 }
-#footer{
-margin-left: -20px;
-margin-right: -20px;
-padding-left: 20px;
-padding-right: 20px;
-    }

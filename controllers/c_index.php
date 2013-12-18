@@ -26,7 +26,7 @@ class index_controller extends base_controller
 
 
         # Now set the <title> tag
-        $this->template->title = "CM-Buzz";
+        $this->template->title = "Welcome";
 
 
 # CSS/JS includes
