@@ -1,15 +1,3 @@
-<h4>What is conflict Mineral Anyway?</h4>
-<h4>Did you know that the war in Eastern Congo is the deadliest war since World War 2, and in modern history,
-with an estimated 5.4M death toll? source:<a href="http://en.wikipedia.org/wiki/List_of_wars_and_anthropogenic_disasters_by_death_toll#cite_note-23"> here </a></h4>
-Despite uncovered media attention on such a magnitude conflict, since it is disguised as a civil war,
-We at CMBuzz urge you to pose yourself some logical questions.
-1)What makes it a civil war, if the conflict involves 9 different African nations, within the same region?
-
-Take a close look at Congo's mineral resources map showing a concentration of resources in Eastern Congo, now I think
-you are connecting the dot. Isn't that intriguing that the region that is the most terrorized by rapes and other violents abuses
-is the same region that has all of the Coltan, as we call it? All they have to do is to instill terror, people leave and now they
-can smuggle these minerals without being watched. The problem is - they are being resold to you.
-<pre>
 
 
   At CMBUZZ, we developed a friendly CM-free tool below to give you an insight on what actions companies are (or are not)

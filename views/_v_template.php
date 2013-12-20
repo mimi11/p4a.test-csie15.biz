@@ -37,7 +37,7 @@
                 </div>
                  <div id='header_intro'> <!--div header_Intro starts here-->
                     <h4>Welcome to <?= APP_NAME ?> <?php if ($user) echo ', ' . $user->first_name; ?> </h4>
-                     <div id='session_status'><?php echo $_SESSION['status'];?>
+                     <div id='session_status' class ='user_status <?php echo $_SESSION['status'];?>' >
                      </div> <!--end of session_status-->
 
                      <!--if user not logged in-->
@@ -48,8 +48,10 @@
       </div> <!--End of div header"-->
 
       <div id='navigation'> <!-- Menu navigation  for users who are logged in -->
+          <a href='/'>Home</a> |
+          <a href='/index/about'>About</a>
              <?php if($user): ?>
-                <a href='/'>Home</a> |
+
                 <a href='/users/profile'>My Profile </a> |
                 <a href='/posts/users'> Members  </a> |
                 <a href='/rankings/index'> Company Rankings  </a> |

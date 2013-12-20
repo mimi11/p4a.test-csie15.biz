@@ -3,7 +3,9 @@
 
 
         <div class="avatar">
-            <img src="/users/avatar/" class="chix_avatar" alt="user_avatar">
+
+            <img src='/uploads/avatars/<?=$avatar?>' alt="user_avatar">
+
         </div>
 
         <div id="profile_links">

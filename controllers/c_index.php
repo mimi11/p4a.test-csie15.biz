@@ -17,9 +17,11 @@ class index_controller extends base_controller
     /*-------------------------------------------------------------------------------------------------
     Accessed via http://localhost/index/index/
     -------------------------------------------------------------------------------------------------*/
+
+
+
     public function index()
-    {   $error=null;
-        $login_error = null;
+    {
         # Any method that loads a view will commonly start with this
         # First, set the content of the template with a view file
         $this->template->content = View::instance('v_index_index');
@@ -52,17 +54,19 @@ class index_controller extends base_controller
        }
 
 
-           # LOGIC FOR LOGIN_ERROR
-     if ($login_error == 'password_error'){
-
-       echo" Login failed. Please double check your password.";
-     }
-      if ($login_error == 'email_error'){
-
-       echo " Login failed. Please double check your email.";
-      }
 
     } # End of method
+
+
+    public function about(){
+        # Setup view
+
+        $this->template->content = View::instance('v_index_about');
+        $this->template->title = "About CMBuzz";
+
+        # Render template
+        echo $this->template;
+    }
 
 
 } # End of class

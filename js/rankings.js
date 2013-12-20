@@ -27,7 +27,13 @@ $( document ).ready(function() {
                 // Inject the data into the page
                 $('#company_score').html("company score: ");
                 $('#result').html(data['comapny_score']);
-                $('#session_status').html(data['score_status']);
+
+                //set the class of the session_status div  setting the value of a the attribute we want to pass in a
+                //new value  and pass in the original name
+
+                $('#session_status').attr("class","user_status "+data['score_status']);
+
+                //set the class of the session_status div
             }
         });
 

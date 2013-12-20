@@ -108,10 +108,10 @@ class users_controller extends base_controller
             $from = Array("name" => APP_NAME, "email" => APP_EMAIL);
 
             # Subject
-            $subject = "Welcome to Chatter";
+            $subject = "Welcome to CMBUZZ";
 
             # You can set the body as just a string of text
-            $body = "This is just a message to confirm your registration at Chatter.biz";
+            $body = "This is just a message to confirm your registration at CMBUZZ.biz";
 
             # if email is complex and involves HTML/CSS, you can build the body via a View like we do in our controllers
             # $body = View::instance('e_users_welcome');
@@ -226,7 +226,7 @@ class users_controller extends base_controller
 
     }
 
-    public function avatar()
+    protected function getAvatarFileName()
     {
         //get the name of the file from the db select image where user -.this user.id
         $q= 'SELECT image
@@ -240,25 +240,18 @@ class users_controller extends base_controller
 
         if ($avatar == true) {
 
-            require(APP_PATH . "/libraries/Image.php");
-            $imageObj = new Image(APP_PATH . '/uploads/avatars/'.$avatar);
-            $imageObj->resize(100, 100);
-            $imageObj->display();
+
+           return $avatar;
 
         } # Means there is something went wrong - e.g parameter is wrong since update() should only update a single row.
         else {
-
-            require(APP_PATH . "/libraries/Image.php");
-            $imageObj = new Image(APP_PATH."uploads/avatars/example.gif");
-            $imageObj->resize(100, 100);
-            $imageObj->display();
-
+             return "example.gif";
 
         }
     }
 
 
-     public function user_device(){
+     public function user_device_control_panel(){
         //view for user to provide information about a device they own
 
        //set-up view
@@ -309,14 +302,8 @@ class users_controller extends base_controller
 
         #pass data to the view
         $this->template->content->post = $profile_id;
-        $avatar ='SELECT image
-                From users
-                WHERE user_id = '
-            . "'"
-            .$this->user->user_id
-            . "'";
 
-        $this->template->content->avatar = $avatar;
+        $this->template->content->avatar = $this->getAvatarFileName();
 
 
         # Render template
@@ -415,9 +402,6 @@ class users_controller extends base_controller
         $this->template->content = View::instance('v_users_profile');
 
 
-
-
-
         # Query for all posts information pertinent to the user only
         $q = 'SELECT
             posts.content,
@@ -436,8 +420,11 @@ class users_controller extends base_controller
         # Run the query, store the results in the variable $posts
         $post_profile = DB::instance(DB_NAME)->select_rows($q);
 
+
         # Pass data to the View
         $this->template->content->posts = $post_profile;
+        $this->template->content->avatar = $this->getAvatarFileName();
+
 
 
         # Render template

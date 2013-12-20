@@ -110,6 +110,8 @@ class rankings_controller extends base_controller
             $data['score_status'] = $status;
 
 
+
+
         //step 2 - Read operation
 
         # setup query for retrieving manufacturer
@@ -131,5 +133,9 @@ class rankings_controller extends base_controller
             $data['comapny_score'] =-1;
         }
         echo json_encode($data);
+
+
+
     }
+
 }#eoc

@@ -1,6 +1,6 @@
 Your Account Information:
 <div>
-   <img src='<?$avatar?>' alt="user_avatar">
+   <img src='/uploads/avatars/<?=$avatar?>' alt="user_avatar">
 <br>
  <p>First Name: <?= $user->first_name ?></p>
     <br>

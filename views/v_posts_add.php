@@ -1,11 +1,7 @@
-<h5>It starts with a new Chatter....</h5>
-
-<form method='POST' action='/posts/p_add'>
-
-    <label for='content'> Enter New Post:</label><br>
-    <textarea name='content' id='content'></textarea>
-
-    <br><br>
-    <input type='submit' value='post'>
-
+<form method='post' action='/posts/p_add'>
+    <textarea name='content'>Enter a New Post </textarea><br><br>
+    <input type='Submit' value='Add new post'>
 </form>
+
+<!-- Ajax results will go here -->
+<div id='results'></div>

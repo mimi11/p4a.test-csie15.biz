@@ -1,5 +1,5 @@
 /*-------------------------------------------------------------------------------------------------
-
+General Layout
 -------------------------------------------------------------------------------------------------*/
 
 
@@ -40,7 +40,15 @@ button, input {
 button, input, select, textarea {
     margin: 0px;
     font-family: inherit;
-    font-size: 100%;
+    font-size: inherit;
+    line-height: inherit;
+
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
 form{margin:0;padding:0}
 label{cursor:pointer;color:#666;font-weight:bold;vertical-align:middle}
@@ -48,14 +56,12 @@ label input{display: inline-block;font-weight:normal}
 textarea, .inputtext, .inputpassword{border:1px solid #bdc7d8;margin:0;padding:3px}
 textarea{max-width:100%}
 /*-------------------------------------------------------------------------------------------------
-Layout
+App css
 -------------------------------------------------------------------------------------------------*/
 #wrapper{
     background-color: #ffffff ;
     padding-right:10px;
     padding-left:10px;
-
-
 
 
 }
@@ -92,7 +98,30 @@ Layout
     font-size: 30px;
     letter-spacing: 0.2em;
 
+}
 
+.user_status{
+    border: 1px solid red;
+    height:25px;
+    width: 25px;
+}
+
+
+.status_red{
+
+    background-color: red;
+
+}
+
+.status_green{
+
+    background-color: green;
+
+}
+
+.status_yellow{
+
+    background-color: #ffff00;
 
 }
 
@@ -111,7 +140,6 @@ border-bottom: 2px solid greenyellow;
 font-variant: small-caps; font-size: 2em;
 color:white;
 font-family:Helvetica;
-
 
 }
 
@@ -146,11 +174,8 @@ btn-lg {
     line-height: 1.33;
     border-radius: 6px;
 }
-.btn-primary {
-    color: rgb(255, 255, 255);
-    background-color: rgb(66, 139, 202);
-    border-color: rgb(53, 126, 189);
-}
+
+
 .btn {
     display: inline-block;
     padding: 6px 12px;
@@ -167,11 +192,7 @@ btn-lg {
     border-radius: 4px;
     -moz-user-select: none;
 }
-input, button, select, textarea {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-}
+
 
 #wikipedia{
    font:bold;
@@ -247,7 +268,7 @@ input, button, select, textarea {
 
 
 /*------------------------------
-Application specific - Ranking controller css
+ Ranking controller css
 ______________________________*/
 .about_your_device{
 

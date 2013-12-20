@@ -22,9 +22,16 @@ class posts_controller extends base_controller
     public function add()
     {
 
-        # Setup view
         $this->template->content = View::instance('v_posts_add');
-        $this->template->title = "New Post";
+        $this->template->title   = "Add a new post";
+
+        # Load JS files
+        $client_files_body = Array(
+            "/js/jquery.form.js",
+            "/js/posts_add.js"
+        );
+
+        $this->template->client_files_body = Utils::load_client_files($client_files_body);
 
         # Render template
         echo $this->template;
@@ -35,18 +42,24 @@ class posts_controller extends base_controller
     {
 
         # Associate this post with this user
-        $_POST['user_id'] = $this->user->user_id;
 
-        # Unix timestamp of when this post was created / modified
-        $_POST['created'] = Time::now();
+        // Set up the data
+        $_POST['user_id']  = $this->user->user_id;
+        $_POST['created']  = Time::now();
         $_POST['modified'] = Time::now();
 
-        # Insert
-        # Note we didn't have to sanitize any of the $_POST data because we're using the insert method which does it for us
-        DB::instance(DB_NAME)->insert('posts', $_POST);
+        $new_post_id = DB::instance(DB_NAME)->insert('posts',$_POST);
 
-        # Quick and dirty feedback
-        Router::redirect('/users/profile');
+        # Set up the view
+        $view = View::instance('v_posts_p_add');
+
+        # Pass data to the view
+        $view->created     = $_POST['created'];
+        $view->new_post_id = $new_post_id;
+
+        # Render the view
+        echo $view;
+
     }
 
 
@@ -56,7 +69,7 @@ class posts_controller extends base_controller
         $post = DB::instance(DB_NAME)->select_row('SELECT * FROM posts WHERE post_id = ' . $post_id);
         # Setup view
         $this->template->content = View::instance('v_posts_update');
-        $this->template->title = "Updte Post";
+        $this->template->title = "Update Post";
         # Pass data to the View
         $this->template->content->post = $post;
         # Render template
@@ -180,9 +193,18 @@ class posts_controller extends base_controller
         # Store our results (an array) in the variable $connections
         $connections = DB::instance(DB_NAME)->select_array($q, 'user_id_followed');
 
+
+        $count = count($users);
+        for ($i =0; $i<$count; $i ++) {
+         $users[$i]['status'] = $this->status($users[$i]['user_id']);
+
+        }
+
+
         # Pass data (users and connections) to the view
         $this->template->content->users = $users;
         $this->template->content->connections = $connections;
+
 
         # Render the view
         echo $this->template;

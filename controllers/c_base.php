@@ -60,8 +60,17 @@ class base_controller {
         $average_score= DB::instance(DB_NAME)->select_rows($q);
 
         #Return status
+
+
+
         if(count($average_score)==1){
+           if( $average_score[0]['average_score'] === null){
+               return "";
+           }
+
             $calculated_score= floatval($average_score[0]['average_score']);
+
+
             #assuming at least 1 device
             if($calculated_score>= 30){
                 return "status_green";
