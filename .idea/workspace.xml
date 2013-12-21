@@ -85,10 +85,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="364" column="18" selection-start="7508" selection-end="7508" vertical-scroll-proportion="0.61612904">
+            <state line="364" column="18" selection-start="7508" selection-end="7508" vertical-scroll-proportion="-15.28">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="c_index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/c_index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="10" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.6038647">
               <folding />
             </state>
           </provider>
@@ -106,7 +115,7 @@
       <file leaf-file-name="v_index_index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/v_index_index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="6" selection-start="1183" selection-end="1183" vertical-scroll-proportion="-9.708333">
+            <state line="29" column="6" selection-start="1183" selection-end="1183" vertical-scroll-proportion="-18.125">
               <folding />
             </state>
           </provider>
@@ -132,15 +141,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="v_users_profile.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/v_users_profile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="153" selection-end="153" vertical-scroll-proportion="-5.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -158,7 +158,6 @@
         <option value="$PROJECT_DIR$/controllers/c_base.php" />
         <option value="$PROJECT_DIR$/views/v_users_bio.php" />
         <option value="$PROJECT_DIR$/controllers/c_users.php" />
-        <option value="$PROJECT_DIR$/controllers/c_index.php" />
         <option value="$PROJECT_DIR$/views/v_rankings_control_panel.php" />
         <option value="$PROJECT_DIR$/views/v_users_profile.php" />
         <option value="$PROJECT_DIR$/js/rankings_control_panel.js" />
@@ -167,6 +166,7 @@
         <option value="$PROJECT_DIR$/views/v_index_index.php" />
         <option value="$PROJECT_DIR$/views/_v_template.php" />
         <option value="$PROJECT_DIR$/css/app.css" />
+        <option value="$PROJECT_DIR$/controllers/c_index.php" />
       </list>
     </option>
   </component>
@@ -586,13 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/c_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="7" selection-start="1174" selection-end="1174" vertical-scroll-proportion="-15.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/v_rankings_control_panel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="-5.0">
@@ -644,23 +637,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/v_index_about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="-1.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/v_rankings_index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="83" selection-start="458" selection-end="544" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/v_index_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="6" selection-start="1183" selection-end="1183" vertical-scroll-proportion="-9.708333">
           <folding />
         </state>
       </provider>
@@ -674,7 +653,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="364" column="18" selection-start="7508" selection-end="7508" vertical-scroll-proportion="0.61612904">
+        <state line="364" column="18" selection-start="7508" selection-end="7508" vertical-scroll-proportion="-15.28">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/v_index_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="6" selection-start="1183" selection-end="1183" vertical-scroll-proportion="-18.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/v_index_about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/c_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="10" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.6038647">
           <folding />
         </state>
       </provider>
