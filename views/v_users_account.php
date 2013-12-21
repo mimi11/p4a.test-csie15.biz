@@ -1,18 +1,21 @@
 Your Info
 
 <div>
-    <img src='<?$avatar?>' alt="user_avatar">
+    <img src='<? $avatar ?>' alt="user_avatar">
 
     <br>
     <br>
 
     <p>First Name: <?= $user->first_name ?></p>
     <br>
+
     <p>Last Name: <?= $user->last_name ?></p>
     <br>
+
     <p>Email: <?= $user->email ?></p>
     <br>
     <br>
+
     <h3>Update your profile picture coming soon features</h3>
 
 

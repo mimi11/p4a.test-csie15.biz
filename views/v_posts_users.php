@@ -3,7 +3,7 @@
 
 
     <!-- Print this user's name -->
-    <?= $user['first_name'] ?> <?= $user['last_name'] ?>  <?=$user['status']?>
+    <?= $user['first_name'] ?> <?= $user['last_name'] ?>  <?= $user['status'] ?>
 
 
 

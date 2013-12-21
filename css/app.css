@@ -1,7 +1,59 @@
+/*
+ERIC MEYER RESET
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
 /*-------------------------------------------------------------------------------------------------
 General Layout
 -------------------------------------------------------------------------------------------------*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
 
+/*.clearfix {display: inline-block;}  /* for IE/Mac */
+
+/*
+if IE :/* Only IE can see inside the conditional comment
+    and read this CSS rule. Don't ever use a normal HTML
+    comment inside the CC or it will close prematurely. */
+
+
+.clearfix {
+    zoom: 1;     /* triggers hasLayout */
+    display: block;     /* resets display for IE/Win */
+}
+.circular {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+}
+
+input[type=text] {
+    font-size:16px;
+}
 
 body{
     background-color: white;
@@ -9,20 +61,15 @@ body{
 }
 body, button, input, label, select, td, textarea, pre {
     font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
-
-    font-family: "proxima-nova","Helvetica Neue",;
     font-size: 14px;
     line-height: 1.28;
     color: rgb(51, 51, 51);
     -moz-osx-font-smoothing: grayscale;
 }
 body {
-    background:  none repeat scroll 0% 0% rgb(246, 246, 246));
+    background:  none repeat scroll 0% 0% rgb(246, 246, 246);
     color: rgb(51, 51, 51);
-    padding-top: 40px;
-    padding-bottom: 40px;
     margin: 0px;
-    padding: 2px;
     text-align: left;
     unicode-bidi: embed;
 
@@ -60,8 +107,8 @@ App css
 -------------------------------------------------------------------------------------------------*/
 #wrapper{
     background-color: #ffffff ;
-    padding-right:10px;
-    padding-left:10px;
+    padding: 2px;
+
 
 
 }
@@ -168,6 +215,10 @@ font-family:Helvetica;
     box-sizing: border-box;
 }
 
+
+.main_content{
+    padding: 2em;
+}
 btn-lg {
     padding: 10px 16px;
     font-size: 18px;
@@ -236,7 +287,7 @@ btn-lg {
     border-bottom: 2px solid greenyellow;
     font-variant: small-caps; font-size: 2em;
     color:white;
-    font-family:Helvetica;
+
 }
 
 #navigation ul li {
@@ -280,11 +331,11 @@ ______________________________*/
     box-shadow: 1px 1px 2px rgb(204, 204, 204);
     }
 #cm_tool{
-    background:rgb(92, 92, 92)repeat-x scroll 0px -233px transparent;
+    background:rgb(92, 92, 92)repeat-x scroll 0px -233px;
 }
 
 #device_tool {
-    background: rgb(204, 204, 204) repeat-x scroll 0px -233px transparent;
+    background: rgb(204, 204, 204) repeat-x scroll 0px -233px;
     color: white;
     font-size: 20px;
     font-style: italic;
@@ -300,10 +351,26 @@ ______________________________*/
     margin-bottom: 20px;
 
 }
+
+
+
+.profile{
+    border:2px solid #adff2f;
+
+}
+
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+
+}
+
+
 #footer {
 
 
-    background:-moz-linear-gradient(center top , black,rgb(92, 92, 92))repeat scroll 19% 0% transparent;
+    background:-moz-linear-gradient(center top , black,rgb(92, 92, 92))repeat scroll 19% 0%;
     border-top: 5px solid #adff2f;
 
     color: #fff;
@@ -316,4 +383,12 @@ ______________________________*/
     margin-top: 120px;
 
 
+}
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }

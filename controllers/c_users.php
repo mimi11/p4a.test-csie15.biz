@@ -245,24 +245,31 @@ class users_controller extends base_controller
 
         } # Means there is something went wrong - e.g parameter is wrong since update() should only update a single row.
         else {
-             return "example.gif";
+             return "avatar.jpg";
 
         }
     }
 
 
-     public function user_device_control_panel(){
+     public function getControl_panel(){
         //view for user to provide information about a device they own
+         # Setup view
+         $this->template->content = View::instance('v_users_control_panel');
+         $this->template->title   = "Control Panel";
 
-       //set-up view
+         # JavaScript files
+         $client_files_body = Array(
+             '/js/jquery.form.js',
+             '/js/rankings_control_panel.js');
+         $this->template->client_files_body = Utils::load_client_files($client_files_body);
 
-       //render view
-
-       //echo view
-
-
-
+         # Render template
+         echo $this->template;
      }
+
+
+
+
 
       public function p_user_device(){
        // form to process user devices information
@@ -400,6 +407,12 @@ class users_controller extends base_controller
 
         # Setup view
         $this->template->content = View::instance('v_users_profile');
+        # JavaScript files
+        $client_files_body = Array(
+            '/js/jquery.form.js',
+            '/js/rankings_control_panel.js');
+        $this->template->client_files_body = Utils::load_client_files($client_files_body);
+
 
 
         # Query for all posts information pertinent to the user only

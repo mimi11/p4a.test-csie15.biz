@@ -8,12 +8,13 @@
 <?php else: ?>
     <div class="login">
 
-        <form  class ='login_form' id='validate_login' method='POST' action='/users/p_login'>
+        <form class='login_form' id='validate_login' method='POST' action='/users/p_login'>
             <p>
                 <label for="cemail">* E-Mail </label>
                 <br>
                 <input id="cemail" type="email" name="email" required/>
             </p>
+
             <p>
                 <label for="password"> * Password (at least 4 characters)</label>
                 <br>
