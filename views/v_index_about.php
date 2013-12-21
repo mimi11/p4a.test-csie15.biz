@@ -1,8 +1,9 @@
-<h4>What is conflict Mineral Anyway?</h4>
+<h1>What is conflict Mineral Anyway?</h1><br>
+
 <h4>Did you know that the war in Eastern Congo is the deadliest war since World War 2, and in modern history,
-    with an estimated 5.4M death toll? source:<a
-        href="http://en.wikipedia.org/wiki/List_of_wars_and_anthropogenic_disasters_by_death_toll#cite_note-23">
-        here </a></h4>
+    with an estimated 5.4M death toll? source:<a href="http://en.wikipedia.org/wiki/List_of_wars_and_anthropogenic_disasters_by_death_toll#cite_note-23">
+        here </a>
+</h4>
 
 <p>
 

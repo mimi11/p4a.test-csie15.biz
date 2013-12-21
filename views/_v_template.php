@@ -57,10 +57,10 @@
         <a href='/index/about'>About</a>
         <?php if ($user): ?>
 
-            <a href='/users/profile'>My Profile </a> |
-            <a href='/posts/users'> Members </a> |
+          | <a href='/users/profile'> Profile </a> |
+            <a href='/posts/users'> Friends </a> |
             <a href='/rankings/index'> Company Rankings </a> |
-            <a href='/posts'> Followed Chatters </a>
+            <a href='/posts'> All Posts </a>
             <!-- Menu options for users who are not logged in -->
         <?php else: ?>
 

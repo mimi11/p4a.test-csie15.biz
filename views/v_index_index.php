@@ -9,7 +9,7 @@
             to help you know more about how to use your consumer power and
             buzz out conflict minerals out of your devices,
             bring awareness to this conflict and hopefully help bring an end the conflict mineral war
-            in Easter Congo, often disguised as <em> a civil or an ethnical war.</em>
+            in Easter Congo, often disguised as <em> a civil or an ethnic war.</em>
 
             Now that you are part of our community, check out your device(s) to see if is conflict mineral-free <a
                 href="/rankings/index">here</a>
@@ -21,23 +21,26 @@
     <?php else: ?>
 
 
-        <h2>Welcome to Conflict Mineral BUZZ</h2>
-        <h4>a conflict Minerals free online social community. </h4>
-
+        <h2>Welcome to Conflict Minerals BUZZ (CMBUZZ)</h2>
+        <h3> A conflict Minerals-free online social community.</h3><br>
 
         <pre>
-            We hope to provide you with resources gathered by grass roots
-            movement such as the <a href="http://en.wikipedia.org/wiki/Coltan"> Enough Project </a>
-            to help you know more about how to use your consumer power and
-            buzz out conflict minerals out of your devices,
-            bring awareness to this conflict and hopefully help bring an end the
-            conflict mineral war in Easter Congo, often disguised as <em> a civil
-                or an ethnical war.</em>
+      We hope to provide you with resources gathered
+      by grass root movement such as the
+      <p><a href="http://en.wikipedia.org/wiki/Coltan"> Enough Project </a></p>
+      to help you know more about how to use your consumer power and
+      buzz out conflict minerals out of your devices,
+      bring awareness to this conflict and hopefully help bring an end
+      the conflict mineral war in Easter Congo, often disguised as
+      a civil or an ethnic war.
+
          </pre>
 
-         <p>
-             <a href="/users/login">Login </a> or <a href='/users/Signup'>Signup </a> to find out how to Buzz the 3Ts out of your devices!
-         </p>
+
+        <p>
+            <a href="/users/login">Login </a> or <a href='/users/Signup'>Signup </a> to find out how to Buzz the 3Ts out
+            of your devices!
+        </p>
 
 
         <div id="wikipedia">
