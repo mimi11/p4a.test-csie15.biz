@@ -109,9 +109,6 @@ class rankings_controller extends base_controller
             $_SESSION['status'] = $status;
             $data['score_status'] = $status;
 
-
-
-
         //step 2 - Read operation
 
         # setup query for retrieving manufacturer
@@ -178,7 +175,6 @@ class rankings_controller extends base_controller
         # Find out when the last post was created
         $q = "SELECT created FROM posts ORDER BY created DESC LIMIT 1";
         $data['most_recent_post'] = Time::display(DB::instance(DB_NAME)->select_field($q));
-
 
 
         # Send back json results to the JS, formatted in json

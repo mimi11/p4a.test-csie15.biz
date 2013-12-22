@@ -173,6 +173,7 @@ class posts_controller extends base_controller
         $this->template->content = View::instance("v_posts_users");
         $this->template->title = "Users";
 
+
         # Build the query to get all the users
         $q = "SELECT *
         FROM users";
@@ -197,6 +198,17 @@ class posts_controller extends base_controller
         $count = count($users);
         for ($i =0; $i<$count; $i ++) {
          $users[$i]['status'] = $this->status($users[$i]['user_id']);
+
+
+            #Refreshing user status once they add a new device
+            #step 1 - get status from user
+            $status = $this->status($users[$i]['user_id']);
+           #step 2 - storing inside session
+
+            $data['score_status'] = $status;
+            ob_start();
+            echo json_encode($data);
+            ob_end_clean();
 
         }
 
@@ -240,3 +252,5 @@ class posts_controller extends base_controller
 
     }
 }# eoc
+
+

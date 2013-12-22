@@ -1,16 +1,19 @@
+<div id='post_users'>
+
 <? foreach ($users as $user): ?>
     <br>
 
 
     <!-- Print this user's name -->
-    <?= $user['first_name'] ?> <?= $user['last_name'] ?>  <?= $user['status'] ?>
+    <?= $user['first_name'] ?>  <?= $user['last_name'] ?>
+        <div class='session_status'><div class='user_status  <?php echo $user['status'] ?>'>
 
+            </div></div>
 
 
     <!-- If there exists a connection with this user, show a unfollow link -->
     <? if (isset($connections[$user['user_id']])): ?>
         <a href='/posts/unfollow/<?= $user['user_id'] ?>'>Unfollow</a>
-
 
 
 
@@ -25,3 +28,4 @@
 
 <? endforeach; ?>
 
+</div>

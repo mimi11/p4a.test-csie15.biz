@@ -17,12 +17,14 @@ $( document ).ready(function() {
             success: function(response) {
 
                 // For debugging purposes
-                 console.log(response);
+                 //console.log(response);
 
                 // Example response: {"post_count":"9","user_count":"13","most_recent_post":"May 23, 2012 1:14am"}
 
                 // Parse the JSON results into an array
                 var data = $.parseJSON(response);
+
+
 
                 // Inject the data into the page
                 $('#company_score').html("company score: ");
@@ -31,7 +33,7 @@ $( document ).ready(function() {
                 //set the class of the session_status div  setting the value of a the attribute we want to pass in a
                 //new value  and pass in the original name
 
-                $('#session_status').attr("class","user_status "+data['score_status']);
+                $('.session_status').attr("class","user_status "+data['score_status']);
 
                 //set the class of the session_status div
             }
