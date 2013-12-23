@@ -82,10 +82,11 @@
         </div><!--end footer right div-->
 
         <div id='footer_right'>
+            <p>attempting to fix git fetch .idea in my directory</p>
             <p>Carine Melhorn</p>
             <p>c.melhorn@g.harvard.edu</p>
         </div><!--end footer_left div-->
     </div><!--End of Footer div-->
-</div> <!--end of wrapper-->
+</div><!--end of wrapper-->
 </body>
 </html>
