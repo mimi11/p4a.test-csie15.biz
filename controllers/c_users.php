@@ -329,8 +329,22 @@ class users_controller extends base_controller
 
         # This variable will update the content from the user update
         $bio['first_name'] = $_POST['first_name'];
+        # This variable will update the content from the user update
+        $bio['last_name'] = $_POST['last_name'];
+        # This variable will update the content from the user update
+        $bio['password'] = $_POST['password'];
+        # This variable will update the content from the user update
+        $bio['email'] = $_POST['email'];
 
         #storing into user object $post and passing back to the DB
+
+
+
+
+
+
+
+
 
 
         # Update this user into the database
@@ -350,7 +364,9 @@ class users_controller extends base_controller
 
     }
 
-
+/*This function serves to upload users profile new avatar picture
+ *
+ */
     public function bio_update(){
         // if user specified a new image file, upload it
         if ($_FILES['file']['error'] == 0)

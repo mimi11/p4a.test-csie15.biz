@@ -73,19 +73,19 @@
     </div> <!-- end of Main_content-->
 
     <div id='footer'>
-        <div id='footer_right'>
-            P4 Project developed for CSCIE-15
-            1. Edit Profile
-            2. Add/update/Delete a Post
-            3. Javascript: Add a device, and Ajax page refresh
-            5. JSON parsing of javascript information for HTML to render.
+        <div id='footer_left'>
+            <p>P4 Project developed for CSCIE-15. +1 features include</p>
+            <p>  1. Edit Profile picture</p>
+            <p>  2. Add/update/Delete a Post</p>
+            <p> 3. Javascript: Add a device, and Ajax page refresh</p>
+            <p> 4. JSON parsing of javascript information for HTML to render.</p>
         </div><!--end footer right div-->
 
-        <div id='footer_left'>
-            Carine Melhorn
-            c.melhorn@g.harvard.edu
+        <div id='footer_right'>
+            <p>Carine Melhorn</p>
+            <p>c.melhorn@g.harvard.edu</p>
         </div><!--end footer_left div-->
     </div><!--End of Footer div-->
-    </div> <!--end of wrapper-->
+</div> <!--end of wrapper-->
 </body>
 </html>

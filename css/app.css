@@ -312,6 +312,7 @@ btn-lg {
     display: block; /* Sets element back to block */
     font-size: 16px;
     line-height: 2em;
+    text-align:justify;
 
 
 
@@ -361,6 +362,15 @@ btn-lg {
 
 
 }
+
+
+.col2{
+
+    float: right;
+    width: 500px;
+    padding-right:2px;
+
+}
 #index_intro p{
     padding-bottom: 30px;
     padding-top: 10px;
@@ -368,12 +378,6 @@ btn-lg {
 }
 #index_intro img{
     background-color: black;
-}
-.col2{
-
-    float: right;
-    width: 425px;
-
 }
 .key_legend{
     border:graytext 1px solid;
@@ -488,7 +492,7 @@ background: none repeat scroll 0% 0% rgb(124, 192, 75);
 /* Set the fixed height of the footer here */
 
 #footer {
-height: 80px;
+height: 140px;
 }
 
 
@@ -497,25 +501,31 @@ height: 80px;
     background-image: -moz-linear-gradient(center top, black, rgb(92, 92, 92));
     background-image:-webkit-gradient(radial,center center,0,center center, 460, from(#000000), to(#5c5c5c));
 
-
     border-top: 5px solid #adff2f;
 
     color: #fff;
-    padding-top:80px;
-    font-size: 12px;
+    padding-top:30px;
+    font-size: 14px;
     margin-left: -20px;
     margin-left: -20px;
     margin-right: -20px;
     padding-left: 20px;
     margin-top: 180px;
+    display: inline-block; /* Necessary to trigger "hasLayout" in IE */
+    display: block; /* Sets element back to block */
+
+}
+
+#foother_left{
+    float:left;
+    clear:both;
+    margin-right: 100px;
+
+}
+
+#footer_right{
+    float: right;
 
 
 }
-@media (max-width: 767px) {
-    #footer {
-        margin-left: -20px;
-        margin-right: -20px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
+
