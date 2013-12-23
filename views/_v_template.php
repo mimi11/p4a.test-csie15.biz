@@ -17,9 +17,8 @@
     first, then let the java script -->
 
 </head>
-
 <body>
-<div id='wrapper'>
+<div class='wrapper'>
     <div class='header'> <!--div Header starts here-->
         <div class="login_intro">
             <?php if ($user): ?>
@@ -39,53 +38,54 @@
             <h4>Welcome to <?= APP_NAME ?> <?php if ($user) echo ', ' . $user->first_name; ?> </h4>
 
             <div id='session_status' class='user_status <?php echo $_SESSION['status']; ?>'>
-            </div>
-            <!--end of session_status-->
+            </div><!--end of session_status-->
 
             <!--if user not logged in-->
             <?php else: ?>
                 <h1><?= APP_NAME ?></h1>
             <?php
-            endif; ?>
-        </div>
-        <!--end of div header_intro"-->
-    </div>
-    <!--End of div header"-->
+            endif;
+            ?>
+        </div><!--end of div header_intro"-->
+    </div><!--End of div header"-->
 
     <div id='navigation'> <!-- Menu navigation  for users who are logged in -->
         <a href='/'>Home</a> |
         <a href='/index/about'>About</a>
         <?php if ($user): ?>
 
-          | <a href='/users/profile'> Profile </a> |
+            | <a href='/users/profile'> Profile </a> |
             <a href='/posts/users'> Friends </a> |
             <a href='/rankings/index'> Company Rankings </a> |
-            <a href='/posts'> All Posts </a>
+            <a href='/posts'> All Posts </a> |
+            <a href='/rankings/control_panel'> Activities </a>
             <!-- Menu options for users who are not logged in -->
         <?php else: ?>
 
         <?php endif; ?>
-    </div>
-    <!-- End of menu Navigation div here -->
+    </div><!-- End of menu Navigation div here -->
 
     <div class="main_content"> <!-- Main div starts  -->
-        <div class="col1">
+        <?php if (isset($client_files_body)) echo $client_files_body; ?>
 
-            <?php if (isset($client_files_body)) echo $client_files_body; ?>
-            <?php if (isset($content)) echo $content; ?>
-        </div>
-        <div class="col2">
+        <?php if (isset($content)) echo $content; ?>
 
+    </div> <!-- end of Main_content-->
 
-        </div>
-        <!--end of column 2-->
-    </div>
-    <!-- end of Main_content-->
+    <div id='footer'>
+        <div id='footer_right'>
+            P4 Project developed for CSCIE-15
+            1. Edit Profile
+            2. Add/update/Delete a Post
+            3. Javascript: Add a device, and Ajax page refresh
+            5. JSON parsing of javascript information for HTML to render.
+        </div><!--end footer right div-->
 
-    <div id="footer">
-    </div>
-    <!--End of Footer div-->
-</div>
-<!--end of wrapper-->
+        <div id='footer_left'>
+            Carine Melhorn
+            c.melhorn@g.harvard.edu
+        </div><!--end footer_left div-->
+    </div><!--End of Footer div-->
+    </div> <!--end of wrapper-->
 </body>
 </html>

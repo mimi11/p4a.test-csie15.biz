@@ -160,22 +160,20 @@ class rankings_controller extends base_controller
         $data = Array();
 
         # Find out how many posts there are
-        $q = "SELECT count(post_id) FROM posts";
+        $q = "SELECT count(post_id) FROM posts where user_id =".$this->user->user_id;
         $data['post_count'] = DB::instance(DB_NAME)->select_field($q);
 
         # Find out how many posts there are
-        $q = "SELECT count(device_id) FROM users_devices";
+        $q = "SELECT count(device_id) FROM users_devices where user_id =".$this->user->user_id;
         $data['device_count'] = DB::instance(DB_NAME)->select_field($q);
 
-
         # Find out how many users there are
-        $q = "SELECT count(user_id) FROM users";
-        $data['user_count'] = DB::instance(DB_NAME)->select_field($q);
+        $q = "SELECT count(user_id_followed) FROM users_users where user_id =".$this->user->user_id;;
+        $data['users_followed'] = DB::instance(DB_NAME)->select_field($q);
 
         # Find out when the last post was created
         $q = "SELECT created FROM posts ORDER BY created DESC LIMIT 1";
         $data['most_recent_post'] = Time::display(DB::instance(DB_NAME)->select_field($q));
-
 
         # Send back json results to the JS, formatted in json
         echo json_encode($data);

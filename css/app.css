@@ -45,20 +45,13 @@ body{
 }
 body, button, input, label, select, td, textarea, pre {
     font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.33;
     color: rgb(51, 51, 51);
     -moz-osx-font-smoothing: grayscale;
     -webkit-transition: all .6s ease;
 }
-body {
-    background:  none repeat scroll 0% 0% rgb(246, 246, 246);
-    color: rgb(51, 51, 51);
-    margin: 0px;
-    text-align: left;
-    unicode-bidi: embed;
 
-}
 
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
     cursor: pointer;
@@ -87,10 +80,12 @@ label{cursor:pointer;color:#666;font-weight:bold;vertical-align:middle}
 label input{display: inline-block;font-weight:normal}
 textarea, .inputtext, .inputpassword{border:1px solid #bdc7d8;margin:0;padding:3px}
 textarea{max-width:100%}
+
+
 /*-------------------------------------------------------------------------------------------------
 App css
 -------------------------------------------------------------------------------------------------*/
-#wrapper{
+.wrapper{
     background-color: #ffffff ;
     padding: 2px;
 
@@ -118,15 +113,19 @@ App css
 .header  h1{
 
     clear: both;
-
 }
+.user_status{
+    margin-left:14em;
+}
+
+
 #header_intro h4 {
     display:inline-block;
     float: left;
     clear:both;
 
 }
-#app_name h1{
+h1{
 
     color: rgb(204,304,92);
     text-decoration: none;
@@ -135,8 +134,11 @@ App css
     -moz-text-decoration-style: solid;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: 0.2em;
+
+}
+h4{
 
 }
 
@@ -144,6 +146,7 @@ App css
     border: 1px solid red;
     height:25px;
     width: 25px;
+    margin-left: 14em;
 }
 
 
@@ -196,6 +199,19 @@ font-family:Helvetica;
     background-color: darkgray;
 
 }
+.login_intro h1{
+    color: rgb(204,304,92);
+    text-decoration: none;
+    -moz-text-blink: none;
+    -moz-text-decoration-line: none;
+    -moz-text-decoration-style: solid;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 0.2em;
+
+
+}
 .login_form{
     max-width: 330px;
     margin: 0 auto;
@@ -209,9 +225,7 @@ font-family:Helvetica;
 }
 
 
-.main_content{
-    padding: 2em;
-}
+
 btn-lg {
     padding: 10px 16px;
     font-size: 18px;
@@ -250,10 +264,11 @@ btn-lg {
 
 
 }
-#session_status{
+.session_status{
     float:left;
     margin-left: 1em;
     clear: both;
+    margin-right: 10px;
 }
 
 #navigation {
@@ -290,12 +305,111 @@ btn-lg {
     /* Rules for navigation items */
 }
 
+.main_content{
+    padding: 2em;
+    overflow: hidden;
+    display: inline-block; /* Necessary to trigger "hasLayout" in IE */
+    display: block; /* Sets element back to block */
+    font-size: 16px;
+    line-height: 2em;
 
 
-.col2{
+
+}
+.main_content h1{
+
+    font: bolder;
+    font-size: 23px;
+    color: rgb(51, 51, 51);
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: none;
 
 }
 
+.main_content h2{
+    font-size: 20px;
+
+    font: "Lucida Console";
+    padding-bottom: 10px;
+    color: rgb(51, 51, 51);
+    -moz-osx-font-smoothing: grayscale;
+
+}
+.main_content a{
+    display: inline-block;
+    padding: 5px 10px 5px;
+    letter-spacing: 0.05em;
+    color: rgb(61, 137, 1);
+    text-decoration: none;
+}
+.main_content a:visited{
+    color: rgb(61, 137, 1);
+    text-decoration: none;
+
+}
+.main_content a:hover{
+    color: rgb(51, 51, 51);
+}
+
+.col1{
+
+    float:left;
+    width: 740px;
+    float: left;
+    margin-right: 100px;
+    clear:both;
+
+
+}
+#index_intro p{
+    padding-bottom: 30px;
+    padding-top: 10px;
+
+}
+#index_intro img{
+    background-color: black;
+}
+.col2{
+
+    float: right;
+    width: 425px;
+
+}
+.key_legend{
+    border:graytext 1px solid;
+    height:30px;
+    width:30px;
+
+}
+#green{
+    background-color: green;
+}
+#yellow{
+    background-color: #ffff00;
+}
+#red{
+   background-color: red;
+}
+#blank{
+    background-color: transparent;
+}
+#legend_left{
+    clear:both;
+    float:left;
+    margin-right: 10px;
+
+}
+#legend_right{
+    float:right:
+}
+#3T_pics{
+    background-color: #000000;
+    padding:2px;
+}
+#score_credit{
+    font:small-caption;
+    padding-top: 2em;
+}
 
 /*------------------------------
  Ranking controller css
@@ -308,9 +422,15 @@ ______________________________*/
     overflow: hidden;
     background: none repeat scroll 0% 0% white;
     box-shadow: 1px 1px 2px rgb(204, 204, 204);
+    margin-top: 3em;
+
+
     }
 #cm_tool{
-    background:rgb(92, 92, 92)repeat-x scroll 0px -233px;
+    background: none repeat scroll 0% 0% rgb(124, 192, 75);
+    color: rgb(255, 255, 255);
+
+
 }
 
 #device_tool {
@@ -332,11 +452,36 @@ ______________________________*/
 }
 
 
+.profile a {
 
-.profile{
-    border:1px solid #5b5b5b;
-    background-color: #FFF3CA;
+background: none repeat scroll 0% 0% rgb(124, 192, 75);
+    color: rgb(255, 255, 255);
+}
+.profile a:visited {
 
+    background: none repeat scroll 0% 0% rgb(124, 192, 75);
+    color: rgb(255, 255, 255);
+}
+.profile a:hover {
+
+    background: none repeat scroll 0% 0% rgb(124, 192, 75);
+    color: rgb(51, 51, 51);
+}
+
+.post_index time{
+    color: rgb(61, 137, 1);
+
+
+}
+.post_index{
+
+    padding-top: 2em;
+
+}
+.name{
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    display: inline-block;
 }
 
 

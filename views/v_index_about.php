@@ -1,11 +1,20 @@
 <h1>What is conflict Mineral Anyway?</h1><br>
 
 <h4>Did you know that the war in Eastern Congo is the deadliest war since World War 2, and in modern history,
-    with an estimated 5.4M death toll? source:<a href="http://en.wikipedia.org/wiki/List_of_wars_and_anthropogenic_disasters_by_death_toll#cite_note-23">
+    with an estimated 5.4M death toll? source:<a
+        href="http://en.wikipedia.org/wiki/List_of_wars_and_anthropogenic_disasters_by_death_toll#cite_note-23">
         here </a>
 </h4>
 
 <p>
+
+    We hope to provide you with resources gathered by grass roots
+    movement such as the <a href="http://en.wikipedia.org/wiki/Coltan"> Enough Project </a>
+    to help you know more about using your consumer power and
+    buzz out conflict minerals out of your devices, bring awareness to this conflict
+    and hopefully help bring an end the conflict mineral war in Eastern Congo,
+    often disguised as <em> a civil or an ethnic war.</em>
+
 
     Despite uncovered media attention on such a magnitude conflict, we at CMBuzz urge you to pose yourself some logical
     questions.
@@ -32,14 +41,12 @@
 <pre>
     This project was developed for the sole purpose of CSIE-15 and plus One features include:
 
-    1. Jquery Form Validation
-    2. Add/update/Delete a Post
-    3. Send email
-    4. Ajax page refresh
-    5. JSON parsing of javascript information for HTML to render.
-
     </pre>
 
 
-
-
+<p> Enough Project </a></p>
+to help you know more about how to use your consumer power and
+buzz out conflict minerals out of your devices,
+bring awareness to this conflict and hopefully help bring an end
+the conflict mineral war in Easter Congo, often disguised as
+a civil or an ethnic war.

@@ -1,63 +1,87 @@
-<div class="index_intro">
+<div class=col1 id="index_intro">
     <?php if ($user): ?>
 
-        Welcome to Conflict Minerals BUZZ (CMBUZZ)
-        A conflict Minerals-free online social community.
-        <pre>
-            We hope to provide you with resources gathered by grass roots
-            movement such as the <a href="http://en.wikipedia.org/wiki/Coltan"> Enough Project </a>
-            to help you know more about how to use your consumer power and
-            buzz out conflict minerals out of your devices,
-            bring awareness to this conflict and hopefully help bring an end the conflict mineral war
-            in Easter Congo, often disguised as <em> a civil or an ethnic war.</em>
+        <h1> Welcome to Conflict Minerals BUZZ (CMBUZZ)</h1>
+        <h2>A conflict Minerals-free online social community</h2>
 
-            Now that you are part of our community, check out your device(s) to see if is conflict mineral-free <a
-                href="/rankings/index">here</a>
+        <p>
+            For each electronic devices registered at CMBUZZ, you gain an average status score that corresponds to the
+            average scores assigned to your manufacturer.
+            The score represents efforts made by the manufacturer toward eliminating conflict minerals out of
+            electronics production.
+            <br>
 
-         </pre>
+            Stretch it further by following your friends based on their conflict Minerals status!
+            <br>
+        </p>
 
+
+        <h2>Now that you are part of our community, check out your device(s) <a
+                href="/rankings/index">here</a> for potential Conflict minerals</h2>
+
+        <div id='3T_pics'>
+            <img src='/images/Tantanlum.jpg' alt='tantalum'>
+            <img src='/images/Tungsten.JPG' alt='tungsten'>
+            <img src='/images/Tin.jpg' alt="tin">
+        </div><!--end of 3T-pics-->
 
         <!-- Menu options for users who are not logged in -->
     <?php else: ?>
 
 
-        <h2>Welcome to Conflict Minerals BUZZ (CMBUZZ)</h2>
-        <h3> A conflict Minerals-free online social community.</h3><br>
+        <h1> Welcome to Conflict Minerals BUZZ (CMBUZZ)</h1>
+        <h2>A conflict Minerals-free online social community</h2>
 
-        <pre>
-      We hope to provide you with resources gathered
-      by grass root movement such as the
-      <p><a href="http://en.wikipedia.org/wiki/Coltan"> Enough Project </a></p>
-      to help you know more about how to use your consumer power and
-      buzz out conflict minerals out of your devices,
-      bring awareness to this conflict and hopefully help bring an end
-      the conflict mineral war in Easter Congo, often disguised as
-      a civil or an ethnic war.
+        <p>
+            For each electronic devices registered at CMBUZZ, you gain an average status score that corresponds to the
+            average scores assigned to your manufacturer.
+            The score represents efforts made by the manufacturer toward eliminating conflict minerals out of
+            electronics production.
+            <br>
 
-         </pre>
-
+            Stretch it further by following your friends based on their conflict Minerals status!
+            <br>
+        </p>
 
         <p>
             <a href="/users/login">Login </a> or <a href='/users/Signup'>Signup </a> to find out how to Buzz the 3Ts out
             of your devices!
         </p>
 
+        <div id='3T_pics'>
+            <img src='/images/Tantanlum.jpg' alt='tantalum'>
+            <img src='/images/Tungsten.JPG' alt='tungsten'>
+            <img src='/images/Tin.jpg' alt="tin">
 
-        <div id="wikipedia">
-            <p>From Wikipedia, the free encyclopedia:
+            <p>Learn more about <a href="http://en.wikipedia.org/wiki/Coltan"> Coltan</a>
 
-                "Coltan (short for columbite–tantalite and known industrially as tantalite)
-                is a dull black metallic ore from which the elements niobium (formerly "columbium") and tantalum are
-                extracted.
-
-                Tantalum from coltan is used to manufacture tantalum capacitors, used in electronic products.
-                Coltan mining has been cited as helping to finance serious conflict,conflict in the Democratic Republic
-                of Congo"
-        </div>
-
-
-
+        </div><!--end of 3T's pics-->
 
     <?php endif; ?>
 
 </div> <!--end of index_intro-->
+
+<div class='col2'>
+
+    <h2>Your CMBUZZ Status Legend:</h2>
+
+    <div id='legend_left'>
+        <div id='green' class='key_legend'></div>
+        <div id='yellow' class='key_legend'></div>
+        <div id='red' class='key_legend'></div>
+        <div id='blank' class='key_legend'></div>
+        <br>
+    </div><!--end of legend_lef-->
+    <div id='legend_right'>
+        <div id=legend_green>Average score: 30 and up</div>
+        <div id=legend_yellow> Average score: 16-29</div>
+        <div id=legend_red> Average score: 0-15</div>
+        <div id=legend_blank>Blank Status : No devices registered</div>
+    </div><!--end of legend_right-->
+    <br>
+
+    Read more on status key <a href='/rankings/index'>here</a>
+
+</div><!--end of col2-->
+
+
